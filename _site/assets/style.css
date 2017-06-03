@@ -8,9 +8,24 @@ body {
     margin: 0;
 }
 
-.thumbnail p {
-    text-align: center;
+.img-circle {
+    height: 90px;
+    width: 90px;
 }
+
+.overlay {
+    position:absolute;
+    top:19%;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:9999;
+}
+
+.caption {
+    position: relative;
+}
+
 
 /* navbar */
 .navbar-inverse {
@@ -37,6 +52,10 @@ body {
     color: #fff !important;
 }
 
+.thumbnail p {
+    text-align: center;
+}
+
 .qv {
     margin-bottom: 22px;
     background-color: #ffffff;
@@ -56,10 +75,10 @@ body {
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
+        color: #777 !important;
     }
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
+        color: #333 !important;
     }
 }
