@@ -19,7 +19,7 @@ jQuery.fn.loadRepositories = function(username) {
                 
                     list.append('<li class="list-group-item"><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '<em>'+(this.language?('('+this.language+')'):'')+'</em></a></li>');
             }
-            return index < 4;
+            return index < 10;
 
         });      
       });

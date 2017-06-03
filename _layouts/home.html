@@ -4,19 +4,18 @@ layout: default
 
   {{ content }}
 
-  <ul class="post-list">
+  <div class="panel-body">
     {% for post in site.posts %}
-    <div class="panel-body">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">Published on {{ post.date | date: date_format }}</span>
-        <span class="post-meta"> by {{ post.author }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <p>
+          <span class="post-meta">Published on <b>{{ post.date | date: date_format }}</b></span>
+          <span class="post-meta"> by <b>{{ post.author }}</b></span>
+        </p>
+        <p class="text-justify">{{ post.description }}</p>
+        <a class="btn btn-default" href="{{ post.url | relative_url }}" role="button">Read More ...</a>
         <hr>
-    </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </div>
