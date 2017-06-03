@@ -2,25 +2,21 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
   {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
+    <div class="panel-body">
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">Published on {{ post.date | date: date_format }}</span>
+        <span class="post-meta"> by {{ post.author }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-      </li>
+        <hr>
+    </div>
     {% endfor %}
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
