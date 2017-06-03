@@ -3,6 +3,7 @@ layout: post
 title:  "Hello World"
 date:   2017-06-03 07:04:22 +0545
 categories: test
+author: "Kiran Shahi"
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
