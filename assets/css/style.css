@@ -1117,6 +1117,10 @@ h3.subtitle {
     .caption p {
         font-size: 18px;
     }
+
+    .caption .btn {
+        margin-top: 10px;
+    }
 }
 #home {
     height: 100vh;
