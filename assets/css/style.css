@@ -1,114 +1,1135 @@
-/*body { 
-    padding-top: 70px; 
-    background: #F5F8FA;
-}*/
+/* ----------------------------------------------------------------------------------------
+* Author        : Aman
+* Template Name : Rejume | Personal Resume Template
+* File          : Rejume main css files
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
 
-.caption h3{
-    text-align: center;
+
+
+
+
+/* INDEX
+----------------------------------------------------------------------------------------
+
+01. General css
+
+02. Navigation area css
+
+03. Header area css
+
+04. About area css
+
+05. Skills area css
+
+06. History area css
+
+07. Service area css
+
+08. Portfolio/work area css
+
+09. Testimonial area css
+
+10. Hobbies area css
+
+11. Pricing area css
+
+12. Contact area css
+
+13. Footer area css
+
+
+/* ----------------------------------------------------------------------------------------
+*                                       01. General css
+* -------------------------------------------------------------------------------------- */
+@font-face {
+    font-family: Kaushan;
+    src: url('../font/KaushanScript-Regular.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    color: #444;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+p.text-muted {
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+li {
     margin: 0;
+    padding: 0;
 }
 
-.img-circle {
-    height: 90px;
-    width: 90px;
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.overlay {
-    position:absolute;
-    top:19%;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:9999;
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn, input[type='submit'] {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 25px;
+    border: 2px solid #337ab7;
+    color: #337ab7;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover, input[type='submit']:hover {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.section {
+    padding: 70px 0px;
+}
+
+.section-title {
+    color: #333;
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 35px;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-title h2:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0px;
+    background-color: #555;
+}
+
+.section-title p {
+    margin-top: 25px;
+}
+
+h3.subtitle {
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #555;
+    font-size: 22px;
+}
+
+
+/* preloader css */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-image: url(../img/preloader.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               02. Navigation area css
+* --------------------------------------------------------------------------------------- */
+.sticky-menu {
+    background: #337ab7;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.mainmenu {    
+    margin-top: 10px;    
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticky-menu .mainmenu {    
+    margin-top: 0px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0px;
+}
+
+.navbar-brand {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    padding-left: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.sticky-menu .navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-nav  li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-nav li a {
+    color: #f5f5f5;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus {
+    background: none;
+    color: #bbb;
+}
+
+.mainmenu .navbar-nav li.active a {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               03. Header area css
+* -------------------------------------------------------------------------------------- */
+
+.header-area {
+    height: 100%;
+    min-height: 300px;
+    position: relative;
+    background-image: url(header-bg.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+.header-area:before {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .caption {
     position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: table;
+    margin:15% auto 10%;
+    text-align: center;
+    padding: 15px;
+}
+
+.caption h1 {
+    font-family: 'Kaushan';
+    font-size: 30px;
+    margin: 0;
+    line-height: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.caption h3 {
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.caption p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
+    margin: 30px auto;
+}
+
+.caption .btn {
+    background: #337ab7;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.reverse:hover {
+    background: #fff;
+    color: #337ab7;
+    border: 2px solid #337ab7;
 }
 
 
-/* navbar */
-.navbar-inverse {
-    background-color: #3097D1 !important;
-    border-color: #E7E7E7 !important;
-}
-/* title */
-.navbar-inverse .navbar-brand {
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive !important;
-    color: #fff !important;
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               04. About area css
+* ---------------------------------------------------------------------------------------*/
+
+.about-area {
+    background: #fff;
 }
 
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus {
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive !important;
-    color: #fff !important;
+.about-text {
+    margin-left: -10px;
 }
 
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #fff !important;
+.about-text h2 {
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: #fff !important;
+.me-image {
+    padding: 20px;
+    border-right: 1px dashed #999;
+    border-bottom: 1px dashed #999;
 }
 
-.thumbnail p {
+.social {
+    text-align: right;
+    border-right: 1px dashed #999;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+.social span {
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+.social span i {
+    color: #fff;
+    background: #337ab7;
+    width: 57px;
+    line-height: 46px;
+    font-size: 21px;
+}
+
+.social span i.fa-facebook:hover {
+    background: #3b5998;
+}
+.social span i.fa-twitter:hover {
+    background: #00aced;
+}
+.social span i.fa-linkedin:hover {
+    background: #007bb6;
+}
+.social span i.fa-instagram:hover {
+    background: #bc2a8d;
+}
+.social span i.fa-pinterest:hover {
+    background: #cb2027;
+}
+.social span i.fa-google-plus:hover {
+    background: #dd4b39;
+}
+
+.myname {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #337ab7;
+    margin-top: 20px;
+}
+
+.personal-info {
+    list-style: none;
+    border-top: 1px dashed #999;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: -20px;
+    padding-left: 20px;
+}
+.personal-info li {}
+.personal-info li p {
+    margin-bottom: 10px;
+}
+.personal-info li p strong{
+    width: 125px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   05. Skills area css
+* --------------------------------------------------------------------------------------- */
+.skills-area {
+    background: #f5f5f5;
+    padding-bottom: 50px;
+}
+
+.skill-bar-container .h4 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0;
+    line-height: 35px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
+.skill-progress-bar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #bbb;
+}
+
+.skill-progress-bar > span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: #337ab7;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.skill-progress-bar .count {
+    float: right;
+    display: inline-block;
+    line-height: 35px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   06. History area css
+* --------------------------------------------------------------------------------------- */
+.accordion .panel {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+}
+
+.accordion .panel.panel-faq {
+    margin: 0;
+    margin-left: 30px;
+}
+
+.accordion .panel-collapse {
+    border-top: 1px dashed #bbb;
+}
+
+.accordion .panel-heading a {
+    color: inherit;
+}
+
+.accordion .panel-heading {
+    position: relative;
+    padding-left: 0px;
+    padding: 0;
+    border-top: 1px dashed #999;
+}
+
+.accordion .panel-faq:first-child .panel-heading {
+    border-top: 0px;
+}
+
+.accordion .panel-body {
+    padding: 5px;
+    margin-left: 19px;
+    border-left: 1px dashed #bbb;
+    padding-left: 20px;
+    border-top: 0px !important;
+}
+
+.accordion .panel-body h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.accordion .panel-title {
+}
+
+.accordion .panel-title:after {
+    font-family: fontAwesome;
+    position: absolute;
+    content: "\f078";
+    width: 15px;
+    top: 16px;
+    right: 10px;
+    font-size: 15px;
+    color: #337ab7;
+}
+
+.accordion .active .panel-title:after {
+    content: "\f077";
+}
+
+.accordion .panel-title i.fa {
+    font-size: 25px;
+    float: left;
+    border-right: 1px dashed #bbb;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    color: #337ab7;
+    margin-left: -30px;
+}
+
+.accordion .panel-title .institute {
+    margin-left: 20px;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.institute p {
+    margin: 0;
+    font-size: 85%;
+    color: #777;
+}
+
+.institute h4 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #337ab7;
+    line-height: 60px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   07. Service area css
+* --------------------------------------------------------------------------------------- */
+
+.service-area {
+    background: #f5f5f5;
+    padding-bottom: 30px;
+}
+
+.single-service {
+    margin-bottom: 40px;
+    padding: 0px 0px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.single-service i.fa {
+    font-size: 30px;
+    float: left;
+    border-right: 1px dashed #bbb;
+    width: 70px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #337ab7;
+}
+
+.single-service .ser-con {
+    padding: 20px;
+    border-top: 1px dashed #bbb;
+    clear: both;
+    float: none;
+}
+
+.single-service h4 {
+    position: relative;
+    color: #337ab7;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin-left: 20px;
+    line-height: 40px;
+    float: left;
+    font-weight: 600;
+}
+
+.single-service h4:before {
+   content: '';
+   position: absolute;
+   background-color: #333;
+   width: 50px;
+   height: 0px;
+   bottom: 0;
+   left: 0;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                               08. Portfolio/work area css
+* --------------------------------------------------------------------------------------- */
+.portfolio .mix {
+    display: none;
+}
+
+.filters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     text-align: center;
 }
 
-.qv {
-    margin-bottom: 22px;
-    background-color: #ffffff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+.filters li {
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    border: 2px solid #337ab7;
+    line-height: 30px;
+    padding: 0 20px;
+    color: #337ab7;
 }
 
-.profilePic {
-    max-width: 100px;
-    margin-top: -70px;
-    margin-bottom: 5px;
-    border: 3px solid #fff;
-    border-radius: 100%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+.filters li.active,
+.filters li:hover {
+    background: #337ab7;
+    color: #fff;
 }
 
-.welcomeText {
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive !important;
+.work-items .item {
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
 }
-.wcPanel {
-    font-family: 'Source Sans Pro';
-    font-size: 1.3em;
+
+.work-items .item img {
+    width: 100%;
+    width: 100%;
+    transition: 0.8s ease-out;
+}
+
+.work-items .overlay{
+    background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    z-index: 10;
-    width: 200px;
-    height: 220px;
-    background: #eee;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -ms-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -moz-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.work-items .item:hover .overlay {
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.work-items .item:hover img {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.work-items .overlay i.fa {
+    font-size: 35px;
+    color: #337ab7;
+    position: absolute;
     top: 50%;
     left: 50%;
-    margin: -110px 0 0 -100px;
+    margin-top: -18px;
+    transform: scale(0);
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.work-items .item:hover .overlay i.fa {
+    transform: scale(1);
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                09. Testimonial area css
+* --------------------------------------------------------------------------------------- */
+.testimonial-area {
+    background: #f5f5f5;
+}
+
+.testimonial-list .single-service {
+    margin: 15px auto;
+    max-width: 800px;
+    margin: 15px;
+}
+
+.testimonial-list .desg {
+    text-align: right;
+    color: #000;
+    margin: 0;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 30px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 20px;
+    height: 5px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    background: #000;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    font-size: 15px;
+    color: #ffffff;
+    background: #337ab7;
+    padding: 0 20px;
+    border-radius: 0px;
+    opacity: 1;
+    margin: 0 5px;
+    line-height: 30px;
+    border: 2px solid #337ab7;
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+    background: #fff;
+    color: #337ab7;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   10. Hobbies area css
+* --------------------------------------------------------------------------------------- */
+.interests {
+    position: relative;
+    overflow: hidden;
+    margin-top: -40px;
+}
+.interests:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 70px solid #fff;
+}
+.interests span {
+    width: 20%;
+    height: 140px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Roboto;
+    border-bottom: 1px dashed #999;
+    border-right: 1px dashed #999;
+}
+.interests span i.fa {
+    float: left;
+    font-size: 35px;
+    width: 100%;
+    margin-top: 35px;
+    color: #337ab7;
+    position: relative;
+}
+.interests span .h4 {
+    font-size: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Roboto;
+    position: relative;
+    display: block;
+    width: 100%;
+    border: none;
+    float: none;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                11. Pricing area css
+* --------------------------------------------------------------------------------------- */
+.pricing-area {
+    background: #f5f5f5;
+}
+.price-item {
+    text-align: center;
+    background: #fff;
+}
+.price-item .info {
+    padding: 30px 0;
+}
+.price-item .level {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.price-item .price {
+    margin-top: 50px;
+}
+.price .dollar {
+    font-size: 40px;
+}
+.price .number {
+    font-size: 50px;
+}
+.price-item .features {
+    margin-bottom: 20px;
+}
+.price-item .features ul {
+    list-style: none;
+}
+.price-item .features ul li {
+    line-height: 50px;
+    border-top: 1px dashed #999;
+}
+.price-item.featured .features ul li:first-child {
+    border-top: 0px;
+}
+.price-item .features ul li:last-child {
+    border-bottom: 1px dashed #999;
+}
+.price-item .btn {
+    margin-bottom: 30px;
+}
+.price-item.featured .info ,
+.price-item.featured .btn {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.price-item.featured .btn:hover {
+    background: #fff;
+    color: #337ab7;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   12. Contact area css
+* --------------------------------------------------------------------------------------- */
+.contact-info {text-align: right;border-bottom: 1px dashed #999;clear: both;}
+
+.contact-info i.fa {
+    font-size: 25px;
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #337ab7;
+    border-left: 1px dashed #999;
+    margin-left: 20px;
+}
+
+.contact-info.border-none {
+    border: none;
+}
+
+.contact-info a {
+    color: inherit;
+}
+
+.contact-info p {
+    margin: 20px 0;
+    line-height: 27px;
+    min-height: 60px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 60px;
+    padding: 5px 0px;
+    font-size: 16px;
+    color: #000;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    padding-left: 80px;
+    padding: 0;
+    margin: 20px 0;
+    padding-left: 80px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form .form-group {
+    position: relative;
+    border-bottom: 1px dashed #999;
+}
+
+.contact-form .form-group.in_message {
+    border-bottom: 0;
+}
+
+.contact-form .form-group:before {
+    position: absolute;
+    height: 60px;
+    font-family: FontAwesome;
+    top: 0;
+    left: 0;
+    width: 60px;
+    text-align:center;
+    line-height: 60px;
+    color: #337ab7;
+    border-right: 1px dashed #999;
+    font-size: 25px;
+}
+
+.contact-form .form-group.in_email {}
+
+.contact-form .form-group.in_email:before {}
+
+.in_name:before {content: '\f007';}
+.in_email:before {content: '\f1d8';}
+.in_subject:before {content: '\f0c6';}
+.in_message:before {content: '\f0e0';}
+
+.contact-form textarea#message {
+    padding-top: 10px;
+    height: 115px;
+}
+
+.contact-form .btn {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.contact-form .btn:hover {
+    background-color: #fff;
+    color: #337ab7;
+}
+
+.success {
+    background: #fff none repeat scroll 0 0;
+    color: #50B948;
+    font-weight: 700;
     padding: 20px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    z-index: 100;
+    text-align: center;
+}
+
+.error {
+    background: #fff none repeat scroll 0 0;
+    color: #ff0000;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------
+*                                   13. Footer area css
+* --------------------------------------------------------------------------------------- */
+.footer-area {
+    background: #333;
+    padding: 50px 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .social-links{
+        float: right;
+    }
+}
+
+.social-links li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.social-links li a i {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.social-links li a:hover i {
+    color: #333;
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar {   
+    background: #fff;
 }
 
 @media (max-width: 767px) {
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #777 !important;
+    .footer-area {
+        text-align: center;
     }
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333 !important;
+    .footer-area .social-links {
+        float:none;
+        display:table;
+        margin: auto;
+    }
+    #particles-js{
+        background-position: 50% 15% !important;
+    }
+    .caption h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .caption h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .caption p {
+        font-size: 18px;
     }
 }
+#home {
+    height: 100vh;
+}
+.navbar-brand {
 
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+    text-transform: capitalize !important;
+}
+
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #232741; 
 }
