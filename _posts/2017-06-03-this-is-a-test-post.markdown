@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "This is a test post!"
-date:   2017-06-03 07:04:22 +0545
+last_modified_at:   2017-06-03 07:04:22 +0545
 categories: test
 description: "You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated."
 ---
