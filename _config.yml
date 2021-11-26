@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Kiran Shahi"
   avatar : "/assets/images/kiran-shahi.JPG"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Software engineer by profession and problem solver by heart."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
