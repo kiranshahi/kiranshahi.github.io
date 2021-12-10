@@ -106,3 +106,13 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+
+social:
+  type:  "Person" # Person or Organization (defaults to Person)
+  name:  "Kiran Shahi" # If the user or organization name differs from the site's name
+  links:
+    - "https://www.instagram.com/kirans.me/"
+    - "https://www.linkedin.com/in/kiranshahi/"
+    - "https://github.com/kiranshahi"
+    - "https://stackoverflow.com/users/5740382/kiran-shahi"
