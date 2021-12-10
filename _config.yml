@@ -111,6 +111,7 @@ tag_archive:
 social:
   type:  "Person" # Person or Organization (defaults to Person)
   name:  "Kiran Shahi" # If the user or organization name differs from the site's name
+  jobTitle: "Software Engineer"
   links:
     - "https://www.instagram.com/kirans.me/"
     - "https://www.linkedin.com/in/kiranshahi/"
