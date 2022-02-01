@@ -108,6 +108,13 @@ tag_archive:
   path: /tags/
 
 
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+repository: "kiranshahi/comments"
+
 social:
   type:  "Person" # Person or Organization (defaults to Person)
   name:  "Kiran Shahi" # If the user or organization name differs from the site's name
