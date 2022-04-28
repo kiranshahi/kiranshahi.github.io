@@ -37,6 +37,6 @@ namespace Multiple_MainClasses
 {% endhighlight %}
 
 When we run this code we will get compilation error. To resolve the error we need to specify which Main method we want to execute. To specify the entry point we can follow the following stapes:
-1) Go to project properties in solution explorer or press ctrl + alt + L.
-2) Go to application tab
-3) Select class with method which we want to execute
+1. Go to project properties in solution explorer or press ctrl + alt + L.
+2. Go to application tab
+3. Select class with method which we want to execute
