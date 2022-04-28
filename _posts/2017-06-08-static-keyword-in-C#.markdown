@@ -5,15 +5,15 @@ categories: programming
 description: "When a method is static then it can be invoked directly from the class level without creating an object. This is the reason for making a main() method static."
 ---
 
-When a method is static then it can be invoked directly from the class level without creating an object. This is the reason for making a main() method static.
+When a method is static, it can be invoked directly from the class level without creating an object. It is the reason for making a main() method static.
 
 Points for static keyword
-** A static method can be invoked directly from the class level
-** A static method not requires any class object
-** Any main() method is shared through entire class scope so it always appears with static keyword.
+- A static method can be invoked directly from the class level
+- A static method not requires any class object
+- Any main() method is shared through entire class scope so it always appears with static keyword.
 
 Points for static class
-** Contains only static memebers.
-** Cannot be instantiated.
-** Is sealed.
-** Cannot contain Instance Constructors.
+- Contains only static memebers.
+- Cannot be instantiated.
+- Is sealed.
+- Cannot contain Instance Constructors.
