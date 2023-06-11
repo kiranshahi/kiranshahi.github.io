@@ -2,8 +2,14 @@
 permalink: /about/
 title: "About"
 ---
-Kiran Shahi, a software engineer hailing from Pokhara, Nepal, has always had a passion for technology and computing. After obtaining his Bachelor's degree in Computing from Islington College in Kathmandu, Kiran started his professional journey as a software engineer at Braindigit in July 2017. His love for software engineering and artificial intelligence, specifically in deep learning, neural networks, and computer vision, quickly became apparent.
+👋 Hello, I'm Kiran Shahi, a software engineer from Pokhara, Nepal.
 
-In March 2021, Kiran left his job to pursue a Master of Science in Artificial Intelligence in London, United Kingdom. During his studies, he deepened his knowledge and skills in the field, allowing him to further his passion for technology. In January 2023, Kiran started his new job as a software engineer at MBS Survey Software Ltd, where he can apply his knowledge and skills to real-world problems.
+💻 My journey in the world of technology began after completing my Bachelor's degree in Computing from Islington College in Kathmandu. In July 2017, I joined Braindigit as a software engineer, where I honed my skills and gained practical experience. It was during this time that my passion for software engineering and artificial intelligence, particularly deep learning, neural networks, and computer vision, flourished.
 
-In his leisure time, Kiran stays up to date with the latest developments in the tech industry by exploring the internet. He also maintains a healthy and active lifestyle, as a 1-degree Seido Karate black belt and a fitness enthusiast. Kiran is a well-rounded individual who balances his love for technology with his love for physical fitness and personal growth.
+🎓 In March 2021, I decided to take my knowledge to the next level and pursued a Master of Science in Artificial Intelligence in London, United Kingdom. This educational endeavor allowed me to dive deeper into the field, expanding my expertise and fueling my enthusiasm for technology.
+
+💼 In January 2023, I embarked on a new chapter in my career as a software engineer at MBS Survey Software Ltd. Here, I have the opportunity to apply my knowledge and skills to real-world challenges, contributing to the development of innovative solutions.
+
+⏳ During my leisure time, I make it a priority to stay up to date with the latest tech advancements by exploring the internet and reading tech blogs. Additionally, I maintain an active and balanced lifestyle. As a 1-degree Seido Karate black belt and a fitness enthusiast, I embrace the physical aspect of personal growth alongside my love for technology.
+
+🌟 I am passionate about leveraging my skills and knowledge to make a positive impact in the software engineering field. I am open to new opportunities and collaborations, so feel free to connect with me!
