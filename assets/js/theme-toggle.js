@@ -14,8 +14,8 @@
     const toggle = document.getElementById('theme-toggle');
     if (toggle) {
       toggle.innerHTML = theme === 'dark'
-        ? '<i class="fas fa-sun"></i>'
-        : '<i class="fas fa-moon"></i>';
+        ? '<i class="fa-solid fa-sun"></i>'
+        : '<i class="fa-solid fa-moon"></i>';
     }
   }
 
