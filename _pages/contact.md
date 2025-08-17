@@ -8,7 +8,7 @@ author_profile: true
 ---
 <div class="contact-section">
   <div class="contact-item">
-    <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+    <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
     <a id="email-address"
        class="contact-link"
        href="mailto:kiran.shahi.c3@gmail.com"
