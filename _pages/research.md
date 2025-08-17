@@ -1,7 +1,10 @@
 ---
 title: "Research"
-layout: single
+layout: page
 permalink: /research/
+hero_title: "Research"
+hero_tagline: "Exploring Deep Learning & Computer Vision"
+author_profile: true
 ---
 
 My research focuses on applying deep learning and computer vision to solve real-world problems.

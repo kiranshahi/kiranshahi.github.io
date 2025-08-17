@@ -1,6 +1,10 @@
 ---
 permalink: /about/
 title: "About"
+layout: page
+hero_title: "About Me"
+hero_tagline: "Software Engineer & AI Enthusiast"
+author_profile: true
 ---
 👋 Hello, I'm Kiran Shahi, a software engineer from Pokhara, Nepal.
 

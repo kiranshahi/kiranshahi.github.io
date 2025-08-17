@@ -1,7 +1,10 @@
 ---
 title: "Contact"
-layout: single
+layout: page
 permalink: /contact/
+hero_title: "Get in Touch"
+hero_tagline: "Let's collaborate or just say hello"
+author_profile: true
 ---
 
 I'm always happy to connect with fellow developers, researchers, and collaborators.
