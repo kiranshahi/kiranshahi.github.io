@@ -20,6 +20,24 @@
 body {
   background-color: var(--color-background);
   color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+button,
+.btn {
+  font-weight: 600;
 }
 
 .featured-research {
@@ -63,6 +81,7 @@ body {
 .research-card__title {
   margin: 0 0 0.5rem;
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .research-card__summary {
@@ -360,6 +379,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.2s ease;
+  font-weight: 600;
 }
 
 .copy-email-btn:hover,
