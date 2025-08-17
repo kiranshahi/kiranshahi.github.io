@@ -2,6 +2,9 @@
   <div class="research-grid">
     {% for project in site.data.research %}
     <a class="research-card" href="{{ project.link }}">
+      {% if project.image %}
+      <img class="research-card__image" src="{{ project.image }}" alt="{{ project.title }} thumbnail" loading="lazy">
+      {% endif %}
       <h3 class="research-card__title">{{ project.title }}</h3>
       <p class="research-card__summary">{{ project.summary }}</p>
     </a>
