@@ -76,11 +76,13 @@ footer:
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/kiranshahi/"
     - label: "Google Scholar"
-      icon: "ai ai-google-scholar"
+      icon: "fa-brands fa-google-scholar"
       url: "https://scholar.google.com/citations?user=UY8GlccAAAAJ&hl=en"
+      color: "#4285F4"
     - label: "ORCID"
-      icon: "ai ai-orcid"
+      icon: "fab fa-orcid"
       url: "https://orcid.org/0000-0003-3739-5985"
+      color: "#A6CE39"
     # add any other external profiles here
 
 defaults:
