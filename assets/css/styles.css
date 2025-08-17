@@ -42,6 +42,10 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.research-card:focus {
+  outline: 2px solid var(--color-primary);
+}
+
 .research-card__image {
   width: 100%;
   height: auto;
