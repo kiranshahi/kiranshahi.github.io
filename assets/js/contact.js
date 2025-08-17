@@ -2,6 +2,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const btn = document.getElementById('copy-email');
     const link = document.getElementById('email-address');
+    const emailText = document.getElementById('email-text');
     const feedback = document.getElementById('copy-feedback');
     let revealed = false;
 
@@ -31,7 +32,9 @@
         const email = link.getAttribute('data-email') || 'kiran.shahi.c3@gmail.com';
 
         if (!revealed) {
-          link.textContent = email;
+          if (emailText) {
+            emailText.textContent = email;
+          }
           link.href = 'mailto:' + email;
           btn.textContent = 'Copy Email';
           btn.setAttribute('aria-label', 'Copy email address');
