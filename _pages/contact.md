@@ -15,13 +15,14 @@ I'm always happy to connect with fellow developers, researchers, and collaborato
   <button id="copy-email" class="copy-email-btn">Copy Email</button>
   <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
 </div>
-<div class="contact-item">
-  <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
-  <a class="contact-link" href="https://www.linkedin.com/in/kiranshahi/">linkedin.com/in/kiranshahi</a>
+
+<div class="social-link">
+  <i class="fab fa-linkedin" aria-hidden="true"></i>
+  <a href="https://www.linkedin.com/in/kiranshahi/">linkedin.com/in/kiranshahi</a>
 </div>
-<div class="contact-item">
-  <span class="contact-icon"><i class="fab fa-github"></i></span>
-  <a class="contact-link" href="https://github.com/kiranshahi">github.com/kiranshahi</a>
+<div class="social-link">
+  <i class="fab fa-github" aria-hidden="true"></i>
+  <a href="https://github.com/kiranshahi">github.com/kiranshahi</a>
 </div>
 
 Feel free to reach out with questions, ideas, or just to say hello.
