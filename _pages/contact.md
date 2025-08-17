@@ -11,8 +11,9 @@ I'm always happy to connect with fellow developers, researchers, and collaborato
 
 <div class="contact-item">
   <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-  <a id="email-link" class="contact-link" href="#">****</a>
-  <button id="reveal-email">Show Email</button>
+  <span id="email-address" class="contact-link">****</span>
+  <button id="copy-email" class="copy-email-btn">Copy Email</button>
+  <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
 </div>
 <div class="contact-item">
   <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
