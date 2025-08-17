@@ -16,7 +16,7 @@ author_profile: true
       <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
       <span id="email-text">kir***.sha**.**@gmail.com</span>
     </a>
-    <button id="copy-email" class="copy-email-btn" aria-label="Reveal email address">Reveal Email</button>
+    <button id="copy-email" class="copy-email-btn" aria-label="Reveal email address">Reveal</button>
     <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
   </div>
   <a class="contact-card contact-link"

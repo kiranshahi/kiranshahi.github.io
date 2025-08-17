@@ -36,7 +36,7 @@
             emailText.textContent = email;
           }
           link.href = 'mailto:' + email;
-          btn.textContent = 'Copy Email';
+          btn.textContent = 'Copy';
           btn.setAttribute('aria-label', 'Copy email address');
           revealed = true;
           return;
