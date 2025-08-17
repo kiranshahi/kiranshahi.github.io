@@ -13,7 +13,9 @@
 
     function openMenu() {
       toggle.setAttribute('aria-expanded', 'true');
-      menu.setAttribute('aria-hidden', 'false');
+      if (isMobile()) {
+        menu.setAttribute('aria-hidden', 'false');
+      }
       if (links.length) {
         links[0].focus();
       }
@@ -21,7 +23,9 @@
 
     function closeMenu() {
       toggle.setAttribute('aria-expanded', 'false');
-      menu.setAttribute('aria-hidden', 'true');
+      if (isMobile()) {
+        menu.setAttribute('aria-hidden', 'true');
+      }
       toggle.focus();
     }
 
@@ -65,7 +69,9 @@
       }
     });
 
-    if (!isMobile()) {
+    if (isMobile()) {
+      menu.setAttribute('aria-hidden', 'true');
+    } else {
       menu.setAttribute('aria-hidden', 'false');
     }
   });
