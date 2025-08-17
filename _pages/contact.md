@@ -22,13 +22,12 @@ author_profile: true
     <button id="copy-email" class="copy-email-btn" aria-label="Copy email address">Copy Email</button>
     <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
   </div>
-
-  <div class="social-link">
-    <i class="fab fa-linkedin" aria-hidden="true"></i>
+  <div class="contact-item">
+    <span class="contact-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span>
     <a href="https://www.linkedin.com/in/kiranshahi/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile in new tab">linkedin.com/in/kiranshahi</a>
   </div>
-  <div class="social-link">
-    <i class="fab fa-github" aria-hidden="true"></i>
+  <div class="contact-item">
+    <span class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
     <a href="https://github.com/kiranshahi" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile in new tab">github.com/kiranshahi</a>
   </div>
 </div>

@@ -163,6 +163,20 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  /* Light theme gradient */
+  background:
+    radial-gradient(circle at top left, rgba(0, 0, 0, 0.05), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.05), transparent 40%),
+    linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
+  color: var(--color-text);
+  padding: 6rem 1rem;
+}
+
+[data-theme="dark"] .contact-hero {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 40%),
+    linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
 }
 
 .contact-hero__text {
@@ -274,21 +288,23 @@ body {
 
 .contact-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem;
 }
 
 @media (min-width: 600px) {
   .contact-section {
+    gap: 1.5rem;
     padding: 1.5rem 2rem;
   }
 }
 
 @media (min-width: 900px) {
   .contact-section {
-    flex-direction: row;
-    flex-wrap: wrap;
+    gap: 2rem;
     padding: 2rem 3rem;
   }
 }
@@ -297,7 +313,6 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
 }
 
 .contact-icon {
@@ -352,27 +367,3 @@ body {
   color: var(--color-primary);
 }
 
-.social-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-}
-
-.social-link i {
-  color: var(--color-primary);
-  font-size: 1.25rem;
-}
-
-.social-link a {
-  color: var(--color-text);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.social-link a:hover,
-.social-link a:focus {
-  color: var(--color-primary);
-  text-decoration: underline;
-}
