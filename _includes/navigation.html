@@ -11,6 +11,7 @@
       <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
     {%- endfor -%}
   </ul>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
 </nav>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
