@@ -1,0 +1,35 @@
+.featured-research {
+  padding: 2rem 1rem;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.research-card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.research-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.research-card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.research-card__summary {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
