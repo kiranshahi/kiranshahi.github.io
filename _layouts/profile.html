@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="profile">
+  {% include hero.html %}
+
+  {% if page.bio %}
+  <section class="profile-bio">
+    {{ page.bio }}
+  </section>
+  {% endif %}
+
+  {% if page.projects %}
+  <section class="profile-projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+      {% for project in page.projects %}
+      <li>{{ project }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <div class="profile-content">
+    {{ content }}
+  </div>
+</div>
