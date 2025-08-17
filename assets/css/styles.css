@@ -23,6 +23,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.research-card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
 .research-card__title {
   margin: 0 0 0.5rem;
   font-size: 1.25rem;
