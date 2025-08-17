@@ -5,12 +5,12 @@
       <span>{{ site.title }}</span>
     </a>
   </div>
-  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">&#9776;</button>
   <ul id="nav-menu" class="nav-menu" aria-hidden="false">
     {%- for item in site.data.navigation.main -%}
       <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
     {%- endfor -%}
   </ul>
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">&#9776;</button>
 </nav>
 
