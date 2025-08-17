@@ -5,10 +5,9 @@ layout: profile
 hero_title: "About Me"
 hero_tagline: "Software Engineer & AI Enthusiast"
 author_profile: true
+hero_image: "/assets/images/bio-photo.jpg"
+hero_image_alt: "Kiran Shahi"
 ---
-
-<img src="{{ '/assets/images/bio-photo.jpg' | relative_url }}" alt="Kiran Shahi" class="bio-photo" />
-
 <div class="about-grid">
 <section id="background" class="bio-section">
 <h2>Background</h2>
