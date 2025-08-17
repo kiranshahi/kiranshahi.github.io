@@ -158,6 +158,32 @@ body {
   }
 }
 
+.contact-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-hero__text {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-hero__content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    flex-direction: column;
+  }
+  .contact-hero__text,
+  .contact-hero__content {
+    text-align: center;
+  }
+}
+
 /* Navigation */
 .site-nav {
   position: sticky;
