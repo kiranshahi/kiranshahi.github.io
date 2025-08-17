@@ -1,3 +1,8 @@
+:root {
+  --color-primary: #2a5298;
+  --color-secondary: #1e3c72;
+}
+
 .featured-research {
   padding: 2rem 1rem;
 }
@@ -42,9 +47,10 @@
   line-height: 1.4;
 }
 
+/* Hero Section */
 .home-hero {
   /* Gradient background without personal photo */
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
   color: #fff;
   padding: 6rem 1rem;
 }
@@ -80,6 +86,13 @@
   }
 }
 
+.page__hero,
+.lets-connect {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero__actions,
 .connect__actions {
   display: flex;
   justify-content: center;
@@ -87,10 +100,26 @@
   flex-wrap: wrap;
 }
 
+.hero__actions .btn,
 .connect__actions .btn {
+  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
-.connect__actions .btn:hover {
-  background-color: #2a5298;
+.connect__actions .btn:hover,
+.hero__actions .btn:hover {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 600px) {
+  .hero__actions,
+  .connect__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__actions .btn,
+  .connect__actions .btn {
+    width: 100%;
+  }
 }
