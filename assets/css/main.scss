@@ -286,30 +286,32 @@ body {
   padding: 1rem;
 }
 
-.contact-section {
+ul.contact-section {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
 }
 
 @media (min-width: 600px) {
-  .contact-section {
+  ul.contact-section {
     gap: 1.5rem;
     padding: 1.5rem 2rem;
   }
 }
 
 @media (min-width: 900px) {
-  .contact-section {
+  ul.contact-section {
     gap: 2rem;
     padding: 2rem 3rem;
   }
 }
 
-.contact-item {
+li.contact-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
