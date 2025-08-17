@@ -245,3 +245,26 @@ body {
   color: var(--color-background);
   padding: 1rem;
 }
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-icon {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.contact-link {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
