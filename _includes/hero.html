@@ -1,10 +1,15 @@
-{% if page.hero_title or page.hero_tagline %}
+{% if page.hero_title or page.hero_tagline or page.hero_image %}
 <section class="page-hero">
-  <div class="page__hero text-center">
-    <h1 class="page__title">{{ page.hero_title | default: page.title }}</h1>
-    {% if page.hero_tagline %}
-    <p class="page__lead">{{ page.hero_tagline }}</p>
+  <div class="page__hero text-center{% if page.hero_image %} page__hero--image{% endif %}">
+    {% if page.hero_image %}
+    <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_image_alt | default: page.title }}" class="bio-photo">
     {% endif %}
+    <div class="hero-text">
+      <h1 class="page__title">{{ page.hero_title | default: page.title }}</h1>
+      {% if page.hero_tagline %}
+      <p class="page__lead">{{ page.hero_tagline }}</p>
+      {% endif %}
+    </div>
   </div>
 </section>
 {% endif %}
