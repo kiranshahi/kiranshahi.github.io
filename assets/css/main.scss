@@ -311,9 +311,15 @@ body {
   transition: color 0.2s ease;
 }
 
-.contact-link:hover {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--color-primary);
   text-decoration: underline;
+}
+
+.contact-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .copy-email-btn {
@@ -324,6 +330,16 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.2s ease;
+}
+
+.copy-email-btn:hover,
+.copy-email-btn:focus {
+  background: var(--color-secondary);
+}
+
+.copy-email-btn:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
 }
 
 .copy-email-btn.copied {
