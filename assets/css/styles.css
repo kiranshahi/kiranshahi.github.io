@@ -1,6 +1,20 @@
 :root {
   --color-primary: #2a5298;
   --color-secondary: #1e3c72;
+  --color-background: #ffffff;
+  --color-text: #000000;
+}
+
+[data-theme="dark"] {
+  --color-primary: #90b4ff;
+  --color-secondary: #6577c6;
+  --color-background: #121212;
+  --color-text: #f0f0f0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 .featured-research {
