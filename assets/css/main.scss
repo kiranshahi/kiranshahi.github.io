@@ -288,3 +288,28 @@ body {
   font-size: 0.9rem;
   color: var(--color-primary);
 }
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.social-link i {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.social-link a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-link a:hover,
+.social-link a:focus {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
