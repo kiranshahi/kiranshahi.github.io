@@ -307,24 +307,35 @@ body {
   align-items: center;
   gap: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid var(--color-primary);
   border-radius: 8px;
-  background: var(--color-background);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, var(--color-background) 0%, rgba(0, 0, 0, 0.03) 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .contact-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
 }
 
 .contact-icon {
-  color: var(--color-primary);
-  font-size: 1.75rem;
+  background: var(--color-primary);
+  color: var(--color-background);
+  font-size: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .contact-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.2s ease;
