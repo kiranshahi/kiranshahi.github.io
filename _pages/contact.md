@@ -14,8 +14,17 @@ author_profile: true
     <div class="contact-section">
       <div class="contact-item">
         <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-        <span id="email-address" class="contact-link">****</span>
-        <button id="copy-email" class="copy-email-btn">Copy Email</button>
+        <a id="email-address"
+           class="contact-link"
+           href="mailto:kiran.shahi.c3@gmail.com"
+           aria-label="Email kiran.shahi.c3@gmail.com"
+           data-email="kiran.shahi.c3@gmail.com">****</a>
+        <noscript>
+          <a class="contact-link"
+             href="mailto:kiran.shahi.c3@gmail.com"
+             aria-label="Email kiran.shahi.c3@gmail.com">kiran.shahi.c3@gmail.com</a>
+        </noscript>
+        <button id="copy-email" class="copy-email-btn" aria-label="Copy email address">Copy Email</button>
         <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
       </div>
 
