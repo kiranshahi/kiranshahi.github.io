@@ -2,7 +2,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.querySelector('.nav-toggle');
     const menu = document.getElementById('nav-menu');
-    if (!toggle || !menu) return;
+    const nav = document.querySelector('.site-nav');
+    if (!toggle || !menu || !nav) return;
 
     const links = menu.querySelectorAll('a');
 
@@ -39,6 +40,29 @@
           closeMenu();
         }
       });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (isMobile() && toggle.getAttribute('aria-expanded') === 'true') {
+        if (!nav.contains(e.target)) {
+          closeMenu();
+        }
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (!isMobile()) {
+        menu.setAttribute('aria-hidden', 'false');
+        toggle.setAttribute('aria-expanded', 'false');
+      } else if (toggle.getAttribute('aria-expanded') !== 'true') {
+        menu.setAttribute('aria-hidden', 'true');
+      }
     });
 
     if (!isMobile()) {
