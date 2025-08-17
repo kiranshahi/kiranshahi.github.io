@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="contact-hero">
+  <div class="contact-hero__text">
+    <h1 class="page__title">{{ page.hero_title | default: page.title }}</h1>
+    {% if page.hero_tagline %}
+    <p class="page__lead">{{ page.hero_tagline }}</p>
+    {% endif %}
+  </div>
+  <div class="contact-hero__content">
+    {{ content }}
+  </div>
+</div>
