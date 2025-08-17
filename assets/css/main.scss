@@ -218,3 +218,9 @@ body {
     display: none;
   }
 }
+
+.site-footer {
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: 1rem;
+}
