@@ -161,8 +161,8 @@ body {
 .contact-hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  min-height: 100vh;
   /* Light theme gradient */
   background:
     radial-gradient(circle at top left, rgba(0, 0, 0, 0.05), transparent 40%),
@@ -170,6 +170,15 @@ body {
     linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
   color: var(--color-text);
   padding: 6rem 1rem;
+}
+
+.contact-hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 [data-theme="dark"] .contact-hero {
@@ -189,7 +198,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .contact-hero {
+  .contact-hero__inner {
     flex-direction: column;
   }
   .contact-hero__text,
