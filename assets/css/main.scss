@@ -98,7 +98,11 @@ button,
     radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.05), transparent 40%),
     linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
   color: var(--color-text);
-  padding: 6rem 1rem;
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 [data-theme="dark"] .home-hero {
