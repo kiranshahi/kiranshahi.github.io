@@ -30,11 +30,11 @@ author_profile: true
 
       <div class="social-link">
         <i class="fab fa-linkedin" aria-hidden="true"></i>
-        <a href="https://www.linkedin.com/in/kiranshahi/">linkedin.com/in/kiranshahi</a>
+        <a href="https://www.linkedin.com/in/kiranshahi/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile in new tab">linkedin.com/in/kiranshahi</a>
       </div>
       <div class="social-link">
         <i class="fab fa-github" aria-hidden="true"></i>
-        <a href="https://github.com/kiranshahi">github.com/kiranshahi</a>
+        <a href="https://github.com/kiranshahi" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile in new tab">github.com/kiranshahi</a>
       </div>
     </div>
 
