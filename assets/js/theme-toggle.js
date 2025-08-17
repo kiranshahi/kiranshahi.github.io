@@ -1,9 +1,14 @@
 (function () {
   const html = document.documentElement;
-  const stored = localStorage.getItem('theme');
-  if (stored) {
-    html.setAttribute('data-theme', stored);
+  let theme = localStorage.getItem('theme');
+
+  if (!theme) {
+    theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
   }
+
+  html.setAttribute('data-theme', theme);
 
   function setIcon(theme) {
     const toggle = document.getElementById('theme-toggle');
@@ -13,6 +18,8 @@
         : '<i class="fas fa-moon"></i>';
     }
   }
+
+  setIcon(theme);
 
   function toggleTheme() {
     const current = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
@@ -25,8 +32,6 @@
     const toggle = document.getElementById('theme-toggle');
     if (toggle) {
       toggle.addEventListener('click', toggleTheme);
-      const theme = html.getAttribute('data-theme') || 'light';
-      setIcon(theme);
     }
   });
 })();
