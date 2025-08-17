@@ -3,6 +3,7 @@
     const btn = document.getElementById('copy-email');
     const link = document.getElementById('email-address');
     const feedback = document.getElementById('copy-feedback');
+    let revealed = false;
 
     function manualCopy(message) {
       if (feedback) {
@@ -28,8 +29,15 @@
     if (btn && link) {
       btn.addEventListener('click', function () {
         const email = link.getAttribute('data-email') || 'kiran.shahi.c3@gmail.com';
-        link.textContent = email;
-        link.href = 'mailto:' + email;
+
+        if (!revealed) {
+          link.textContent = email;
+          link.href = 'mailto:' + email;
+          btn.textContent = 'Copy Email';
+          btn.setAttribute('aria-label', 'Copy email address');
+          revealed = true;
+          return;
+        }
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
           navigator.clipboard.writeText(email).then(function () {
