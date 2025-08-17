@@ -10,13 +10,13 @@ author_profile: true
   <div class="contact-card">
     <a id="email-address"
        class="contact-link"
-       href="mailto:kiran.shahi.c3@gmail.com"
+       href="#"
        aria-label="Email kiran.shahi.c3@gmail.com"
        data-email="kiran.shahi.c3@gmail.com">
       <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
-      kiran.shahi.c3@gmail.com
+      kir***.sha**.**@gmail.com
     </a>
-    <button id="copy-email" class="copy-email-btn" aria-label="Copy email address">Copy Email</button>
+    <button id="copy-email" class="copy-email-btn" aria-label="Reveal email address">Reveal Email</button>
     <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
   </div>
   <a class="contact-card contact-link"
