@@ -12,11 +12,11 @@ hero_image_alt: "Kiran Shahi"
 <section id="background" class="bio-section">
 <h2>Background</h2>
 <ul>
-<li>Software engineer from Pokhara, Nepal</li>
-<li>BSc Computing from Islington College, Kathmandu</li>
-<li>Joined Braindigit in July 2017</li>
-<li>Passionate about deep learning, neural networks & computer vision</li>
-<li>MSc Artificial Intelligence in London (March 2021)</li>
+<li>👨‍💻 Software engineer from Pokhara, Nepal</li>
+<li>🎓 BSc Computing from Islington College, Kathmandu</li>
+<li>💼 Joined Braindigit in July 2017</li>
+<li>🤖 Passionate about deep learning, neural networks & computer vision</li>
+<li>📘 MSc Artificial Intelligence in London (March 2021)</li>
 </ul>
 <details>
 <summary>More about my background</summary>
@@ -29,7 +29,7 @@ hero_image_alt: "Kiran Shahi"
 <section id="current-work" class="bio-section">
 <h2>Current Work</h2>
 <ul>
-<li>Software engineer at MBS Survey Software Ltd since January 2023</li>
+<li>💼 Software engineer at MBS Survey Software Ltd since January 2023</li>
 </ul>
 <details>
 <summary>More about my current work</summary>
@@ -40,9 +40,9 @@ hero_image_alt: "Kiran Shahi"
 <section id="interests" class="bio-section">
 <h2>Interests</h2>
 <ul>
-<li>Stay current with tech through blogs and online exploration</li>
-<li>1-degree Seido Karate black belt and fitness enthusiast</li>
-<li>Open to new opportunities and collaborations</li>
+<li>📰 Stay current with tech through blogs and online exploration</li>
+<li>🥋 1-degree Seido Karate black belt and fitness enthusiast</li>
+<li>🤝 Open to new opportunities and collaborations</li>
 </ul>
 <details>
 <summary>More about my interests</summary>
