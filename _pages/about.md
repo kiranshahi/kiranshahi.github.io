@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About"
-layout: page
+layout: profile
 hero_title: "About Me"
 hero_tagline: "Software Engineer & AI Enthusiast"
 author_profile: true
