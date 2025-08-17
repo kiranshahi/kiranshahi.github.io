@@ -201,12 +201,11 @@ body {
   }
 
   .nav-menu {
-    display: none;
     flex-direction: column;
     width: 100%;
   }
 
-  .nav-menu.active {
-    display: flex;
+  .nav-menu[aria-hidden='true'] {
+    display: none;
   }
 }
