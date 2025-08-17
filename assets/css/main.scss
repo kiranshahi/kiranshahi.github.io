@@ -268,3 +268,23 @@ body {
   color: var(--color-primary);
   text-decoration: underline;
 }
+
+.copy-email-btn {
+  background: var(--color-primary);
+  color: var(--color-background);
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.copy-email-btn.copied {
+  background: var(--color-secondary);
+}
+
+.copy-feedback {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
