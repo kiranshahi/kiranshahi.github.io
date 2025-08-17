@@ -14,7 +14,7 @@ author_profile: true
        aria-label="Email kiran.shahi.c3@gmail.com"
        data-email="kiran.shahi.c3@gmail.com">
       <span class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
-      kir***.sha**.**@gmail.com
+      <span id="email-text">kir***.sha**.**@gmail.com</span>
     </a>
     <button id="copy-email" class="copy-email-btn" aria-label="Reveal email address">Reveal Email</button>
     <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
