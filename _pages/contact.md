@@ -9,10 +9,19 @@ author_profile: true
 
 I'm always happy to connect with fellow developers, researchers, and collaborators.
 
-- Email: <span id="email-placeholder">****</span>  
+<div class="contact-item">
+  <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+  <a id="email-link" class="contact-link" href="#">****</a>
   <button id="reveal-email">Show Email</button>
-- LinkedIn: [linkedin.com/in/kiranshahi](https://www.linkedin.com/in/kiranshahi/)
-- GitHub: [github.com/kiranshahi](https://github.com/kiranshahi)
+</div>
+<div class="contact-item">
+  <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+  <a class="contact-link" href="https://www.linkedin.com/in/kiranshahi/">linkedin.com/in/kiranshahi</a>
+</div>
+<div class="contact-item">
+  <span class="contact-icon"><i class="fab fa-github"></i></span>
+  <a class="contact-link" href="https://github.com/kiranshahi">github.com/kiranshahi</a>
+</div>
 
 Feel free to reach out with questions, ideas, or just to say hello.
 
