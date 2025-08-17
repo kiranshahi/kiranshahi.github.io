@@ -6,23 +6,11 @@
     </a>
   </div>
   <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">&#9776;</button>
-  <ul id="nav-menu" class="nav-menu">
+  <ul id="nav-menu" class="nav-menu" aria-hidden="true">
     {%- for item in site.data.navigation.main -%}
       <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
     {%- endfor -%}
   </ul>
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
 </nav>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var toggle = document.querySelector('.nav-toggle');
-  var menu = document.getElementById('nav-menu');
-  if (toggle && menu) {
-    toggle.addEventListener('click', function() {
-      var expanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !expanded);
-      menu.classList.toggle('active');
-    });
-  }
-});
-</script>
+
