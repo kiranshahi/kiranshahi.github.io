@@ -1,0 +1,27 @@
+<nav class="site-nav" role="navigation" aria-label="Primary Navigation">
+  <div class="nav-brand">
+    <a href="{{ '/' | relative_url }}">
+      <img class="nav-logo" src="{{ '/favicon-32x32.png' | relative_url }}" alt="{{ site.title }}">
+      <span>{{ site.title }}</span>
+    </a>
+  </div>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">&#9776;</button>
+  <ul id="nav-menu" class="nav-menu">
+    {%- for item in site.data.navigation.main -%}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+    {%- endfor -%}
+  </ul>
+</nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var toggle = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function() {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('active');
+    });
+  }
+});
+</script>
