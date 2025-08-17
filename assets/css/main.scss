@@ -72,14 +72,20 @@ body {
 
 /* Hero Section */
 .home-hero {
-  /* Gradient background without personal photo */
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
-  color: var(--color-background);
+  /* Light theme gradient */
+  background:
+    radial-gradient(circle at top left, rgba(0, 0, 0, 0.05), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.05), transparent 40%),
+    linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
+  color: var(--color-text);
   padding: 6rem 1rem;
 }
 
 [data-theme="dark"] .home-hero {
-  color: var(--color-text);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 40%),
+    linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
 }
 
 .home-hero .page__title {
