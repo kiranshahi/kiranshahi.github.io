@@ -79,3 +79,18 @@
     transform: translateY(0);
   }
 }
+
+.connect__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.connect__actions .btn {
+  transition: background-color 0.3s ease;
+}
+
+.connect__actions .btn:hover {
+  background-color: #2a5298;
+}
