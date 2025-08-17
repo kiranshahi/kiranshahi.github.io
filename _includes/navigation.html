@@ -7,7 +7,7 @@
   </div>
   <ul id="nav-menu" class="nav-menu" aria-hidden="false">
     {%- for item in site.data.navigation.main -%}
-      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      <li><a href="{{ item.url | relative_url }}" class="{% if page.url == item.url or page.url contains item.url %}active{% endif %}">{{ item.title }}</a></li>
     {%- endfor -%}
   </ul>
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
