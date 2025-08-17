@@ -9,6 +9,7 @@ author_profile: true
 
 <img src="{{ '/assets/images/bio-photo.jpg' | relative_url }}" alt="Kiran Shahi" class="bio-photo" />
 
+<div class="about-grid">
 <section id="background" class="bio-section">
 <h2>Background</h2>
 <p>👋 Hello, I'm Kiran Shahi, a software engineer from Pokhara, Nepal.</p>
@@ -26,5 +27,6 @@ author_profile: true
 <p>⏳ During my leisure time, I make it a priority to stay up to date with the latest tech advancements by exploring the internet and reading tech blogs. Additionally, I maintain an active and balanced lifestyle. As a 1-degree Seido Karate black belt and a fitness enthusiast, I embrace the physical aspect of personal growth alongside my love for technology.</p>
 <p>🌟 I am passionate about leveraging my skills and knowledge to make a positive impact in the software engineering field. I am open to new opportunities and collaborations, so feel free to connect with me!</p>
 </section>
+</div>
 
 <a href="/contact/" class="btn btn--primary btn--large cta">Let's Collaborate</a>

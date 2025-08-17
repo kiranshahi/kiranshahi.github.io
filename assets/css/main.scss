@@ -492,6 +492,12 @@ button,
   margin-top: 0;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 .cta {
   margin-top: 1.5rem;
   display: inline-block;
@@ -505,6 +511,10 @@ button,
 
   .profile-content .bio-photo {
     justify-self: start;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
