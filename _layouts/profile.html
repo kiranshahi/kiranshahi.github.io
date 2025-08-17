@@ -24,5 +24,8 @@ layout: default
 
   <div class="profile-content">
     {{ content }}
+    {% if page.show_research %}
+    {% include featured-research.html %}
+    {% endif %}
   </div>
 </div>
