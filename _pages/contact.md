@@ -13,15 +13,4 @@ I'm always happy to connect with fellow developers, researchers, and collaborato
 
 Feel free to reach out with questions, ideas, or just to say hello.
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const btn = document.getElementById('reveal-email');
-  const span = document.getElementById('email-placeholder');
-  if (btn && span) {
-    btn.addEventListener('click', function() {
-      span.textContent = 'kiran.shahi.c3[at]gmail.com';
-      btn.remove();
-    });
-  }
-});
-</script>
+<script src="{{ '/assets/js/contact.js' | relative_url }}" defer></script>
