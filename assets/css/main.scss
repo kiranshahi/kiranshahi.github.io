@@ -42,6 +42,22 @@ button,
   font-weight: 600;
 }
 
+/* Accessibility Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: var(--color-background);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 .featured-research {
   padding: 2rem 1rem;
 }
