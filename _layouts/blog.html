@@ -6,7 +6,13 @@ layout: default
   {% include hero.html %}
 
   <section class="blog-posts">
-    {% for post in site.posts %}
+    {% if paginator %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+
+    {% for post in posts %}
     <article class="blog-post">
       <h2 class="blog-post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <p class="blog-post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
@@ -14,4 +20,22 @@ layout: default
     </article>
     {% endfor %}
   </section>
+
+  {% if paginator and paginator.total_pages > 1 %}
+  <nav class="pagination" role="navigation">
+    {% if paginator.previous_page %}
+      <a class="pagination--prev" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Newer Posts</a>
+    {% else %}
+      <span class="pagination--prev disabled">&laquo; Newer Posts</span>
+    {% endif %}
+
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page %}
+      <a class="pagination--next" href="{{ paginator.next_page_path | relative_url }}">Older Posts &raquo;</a>
+    {% else %}
+      <span class="pagination--next disabled">Older Posts &raquo;</span>
+    {% endif %}
+  </nav>
+  {% endif %}
 </div>
