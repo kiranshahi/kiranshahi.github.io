@@ -12,6 +12,15 @@ hero_actions:
     url: "/contact/"
 ---
 
+<nav class="page-nav">
+  <h2>On this page</h2>
+  <ul>
+    <li><a href="#themes">Research Themes</a></li>
+    <li><a href="#current-projects">Current Projects</a></li>
+    <li><a href="#future-directions">Future Directions</a></li>
+  </ul>
+</nav>
+
 <div class="research-overview">
   <section id="themes" class="research-section">
     <h2>Research Themes</h2>

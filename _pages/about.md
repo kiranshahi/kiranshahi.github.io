@@ -12,6 +12,16 @@ hero_actions:
     url: "/contact/"
 ---
 
+<nav class="page-nav">
+  <h2>On this page</h2>
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#current-work">Current Work</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#connect">Let's Collaborate</a></li>
+  </ul>
+</nav>
+
 <div class="about-grid">
 
 <section id="background" class="bio-section">
