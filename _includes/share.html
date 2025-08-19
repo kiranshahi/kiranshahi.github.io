@@ -1,19 +1,20 @@
-{% assign post_url = page.url | absolute_url %}
-{% capture share_title %}{% if page.share_title %}{{ page.share_title | escape }}{% else %}{{ page.title | escape }}{% endif %}{% endcapture %}
+{% assign share_url = page.url | absolute_url | url_encode %}
+{% capture share_title %}{% if page.share_title %}{{ page.share_title | url_encode }}{% else %}{{ page.title | url_encode }}{% endif %}{% endcapture %}
+{% capture share_description %}{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | url_encode }}{% endif %}{% endcapture %}
 <div class="page__share">
-  <a class="btn btn--twitter" href="https://twitter.com/intent/tweet?text={{ share_title | uri_escape }}%20{{ post_url }}" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter" target="_blank" rel="noopener noreferrer">
+  <a class="btn btn--twitter" href="https://twitter.com/intent/tweet?text={{ share_title }}&url={{ share_url }}" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter" target="_blank" rel="noopener noreferrer">
     <svg class="icon icon--twitter" aria-hidden="true"><use xlink:href="{{ 'assets/icons.svg#icon-twitter' | relative_url }}"></use></svg>
     <span>{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Twitter</span>
   </a>
-  <a class="btn btn--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ post_url }}" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook" target="_blank" rel="noopener noreferrer">
+  <a class="btn btn--facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook" target="_blank" rel="noopener noreferrer">
     <svg class="icon icon--facebook" aria-hidden="true"><use xlink:href="{{ 'assets/icons.svg#icon-facebook' | relative_url }}"></use></svg>
     <span>{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Facebook</span>
   </a>
-  <a class="btn btn--linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ post_url }}&title={{ share_title }}" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn" target="_blank" rel="noopener noreferrer">
+  <a class="btn btn--linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ share_title }}&summary={{ share_description }}" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn" target="_blank" rel="noopener noreferrer">
     <svg class="icon icon--linkedin" aria-hidden="true"><use xlink:href="{{ 'assets/icons.svg#icon-linkedin' | relative_url }}"></use></svg>
     <span>{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn</span>
   </a>
-  <a class="btn btn--email" href="mailto:?subject={{ share_title }}&body={{ post_url }}" title="{{ site.data.ui-text[site.locale].share_by_label | default: 'Share by' }} Email" target="_blank" rel="noopener noreferrer">
+  <a class="btn btn--email" href="mailto:?subject={{ share_title }}&body={{ share_description }}%0A%0A{{ share_url }}" title="{{ site.data.ui-text[site.locale].share_by_label | default: 'Share by' }} Email" target="_blank" rel="noopener noreferrer">
     <svg class="icon icon--email" aria-hidden="true"><use xlink:href="{{ 'assets/icons.svg#icon-email' | relative_url }}"></use></svg>
     <span>{{ site.data.ui-text[site.locale].share_by_label | default: 'Share by' }} Email</span>
   </a>
