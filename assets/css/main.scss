@@ -336,7 +336,8 @@ button,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  height: var(--header-height);
+  padding: 0 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
