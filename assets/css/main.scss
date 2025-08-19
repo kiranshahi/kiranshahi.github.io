@@ -539,14 +539,8 @@ button,
   margin-top: 0;
 }
 
-.bio-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.bio-section li {
-  margin-bottom: 0.5rem;
+.bio-section p {
+  margin: 0 0 1rem;
   line-height: 1.6;
 }
 
@@ -563,13 +557,53 @@ details summary {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.cta {
-  margin-top: 1.5rem;
-  display: inline-block;
-  align-self: start;
+.section-intro {
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.timeline {
+  position: relative;
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--color-primary);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+.timeline-date {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.cta-card {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-background);
+  border-radius: 0.5rem;
+}
+
+.cta-card .btn {
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -582,7 +616,7 @@ details summary {
   }
 
   .about-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
