@@ -9,6 +9,13 @@
       {% if page.hero_tagline %}
       <p class="page__lead">{{ page.hero_tagline }}</p>
       {% endif %}
+      {% if page.hero_actions %}
+      <div class="hero__actions">
+        {% for action in page.hero_actions %}
+        <a class="btn btn--{% if forloop.first %}primary{% else %}secondary{% endif %} btn--large" href="{{ action.url }}">{{ action.text }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>

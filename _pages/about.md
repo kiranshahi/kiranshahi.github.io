@@ -3,6 +3,13 @@ permalink: /about/
 title: "About"
 layout: profile
 author_profile: true
+hero_title: "About Me"
+hero_tagline: "Software Engineer & AI Researcher"
+hero_actions:
+  - text: "View Research"
+    url: "/research/"
+  - text: "Contact"
+    url: "/contact/"
 ---
 
 <div class="about-grid">
