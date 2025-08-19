@@ -10,6 +10,10 @@
   --color-text: #000000;
   --header-height: 85px;
   --footer-height: 70px;
+  --hero-gradient-light:
+    radial-gradient(circle at top left, rgba(0, 0, 0, 0.05), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.05), transparent 40%),
+    linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
 }
 
 [data-theme="dark"] {
@@ -17,6 +21,10 @@
   --color-secondary: #6577c6;
   --color-background: #121212;
   --color-text: #f0f0f0;
+  --hero-gradient-dark:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 40%),
+    linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
 }
 
 body {
@@ -111,10 +119,7 @@ button,
 /* Hero Section */
 .page-hero {
   /* Light theme gradient */
-  background:
-    radial-gradient(circle at top left, rgba(0, 0, 0, 0.05), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.05), transparent 40%),
-    linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
+  background: var(--hero-gradient-light);
   color: var(--color-text);
   padding: 1rem 1rem;
   min-height: 20vh;
@@ -124,10 +129,7 @@ button,
 }
 
 [data-theme="dark"] .page-hero {
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 40%),
-    linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  background: var(--hero-gradient-dark);
 }
 
 .page-hero .page__title {
@@ -142,10 +144,7 @@ button,
 
 .home-hero {
   /* Light theme gradient */
-  background:
-    radial-gradient(circle at top left, rgba(0, 0, 0, 0.05), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.05), transparent 40%),
-    linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
+  background: var(--hero-gradient-light);
   color: var(--color-text);
   padding: 3rem 1rem;
   min-height: 80vh;
@@ -155,10 +154,7 @@ button,
 }
 
 [data-theme="dark"] .home-hero {
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 40%),
-    linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  background: var(--hero-gradient-dark);
 }
 
 .home-hero .page__title {
@@ -269,10 +265,7 @@ button,
   box-sizing: border-box;
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
   /* Light theme gradient */
-  background:
-    radial-gradient(circle at top left, rgba(0, 0, 0, 0.05), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.05), transparent 40%),
-    linear-gradient(135deg, #ffffff 0%, #e0eaff 100%);
+  background: var(--hero-gradient-light);
   color: var(--color-text);
   padding: 6rem 1rem;
 }
@@ -287,10 +280,7 @@ button,
 }
 
 [data-theme="dark"] .contact-hero {
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 40%),
-    linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  background: var(--hero-gradient-dark);
 }
 
 .contact-hero__text {
