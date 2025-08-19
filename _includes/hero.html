@@ -1,6 +1,12 @@
 {% if page.hero_title or page.hero_tagline or page.hero_image %}
 <section class="page-hero">
   <div class="page__hero text-center{% if page.hero_image %} page__hero--image{% endif %}">
+    <div class="hero-icons" aria-hidden="true">
+      <i class="fas fa-book"></i>
+      <i class="fas fa-code"></i>
+      <i class="fab fa-github"></i>
+      <i class="fas fa-brain"></i>
+    </div>
     {% if page.hero_image %}
     <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_image_alt | default: page.title }}" class="bio-photo">
     {% endif %}
