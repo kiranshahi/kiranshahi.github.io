@@ -121,8 +121,7 @@ button,
   /* Light theme gradient */
   background: var(--hero-gradient-light);
   color: var(--color-text);
-  padding: 1rem 1rem;
-  min-height: 20vh;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +145,7 @@ button,
   /* Light theme gradient */
   background: var(--hero-gradient-light);
   color: var(--color-text);
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -190,7 +189,7 @@ button,
 
 .page__hero,
 .lets-connect {
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
 }
 
