@@ -724,3 +724,27 @@ details summary {
 .btn--secondary:focus {
     color: #fff !important; // keeps text light on hover
 }
+
+/* Blog Post List */
+.blog-posts {
+  padding: 2rem 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.blog-post-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+}
+
+.blog-post-meta {
+  margin: 0 0 0.75rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.blog-post-excerpt {
+  margin: 0;
+  line-height: 1.6;
+}
+

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="blog">
+  {% include hero.html %}
+
+  <section class="blog-posts">
+    {% for post in site.posts %}
+    <article class="blog-post">
+      <h2 class="blog-post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="blog-post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p class="blog-post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </article>
+    {% endfor %}
+  </section>
+</div>
