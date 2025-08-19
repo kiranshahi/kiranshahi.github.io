@@ -52,6 +52,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 author:
   name   : "Kiran Shahi"
@@ -120,7 +121,7 @@ comments:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
 repository: "kiranshahi/comments"
-jekyll_seo_tag: false
+jekyll_seo_tag: true
 social:
   type:  "Person" # Person or Organization (defaults to Person)
   name:  "Kiran Shahi" # If the user or organization name differs from the site's name
