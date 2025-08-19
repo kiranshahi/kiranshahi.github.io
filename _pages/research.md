@@ -7,10 +7,21 @@ hero_tagline: "Exploring Deep Learning & Computer Vision"
 author_profile: true
 ---
 
-My research focuses on applying deep learning and computer vision to solve real-world problems.
+<div class="research-overview">
+  <section id="themes" class="research-section">
+    <h2>Research Themes</h2>
+    <p>My work centers on harnessing deep learning and computer vision to interpret visual data and build intelligent systems. I'm drawn to projects that turn raw pixels into actionable understanding.</p>
+  </section>
 
-I am particularly interested in neural networks for image understanding, automation, and intelligent systems.
+  <section id="current-projects" class="research-section">
+    <h2>Current Projects</h2>
+    <p>I'm exploring real-time video processing, efficient recognition pipelines, and applications that bring AI into everyday tools.</p>
+  </section>
 
-This page highlights ongoing projects, publications, and ideas I'm experimenting with.
+  <section id="future-directions" class="research-section">
+    <h2>Future Directions</h2>
+    <p>Going forward I plan to investigate lightweight models for edge devices and responsible approaches for deploying computer vision in the wild.</p>
+  </section>
+</div>
 
 {% include featured-research.html %}
