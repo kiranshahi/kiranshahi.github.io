@@ -1,4 +1,5 @@
-<section class="featured-research">
+<section class="featured-research research-section">
+  <h2>Project Highlights</h2>
   <div class="research-grid">
     {% for project in site.data.research %}
     <a class="research-card" href="{{ project.link }}">
@@ -8,6 +9,18 @@
       <h3 class="research-card__title">{{ project.title }}</h3>
       <p class="research-card__summary">{{ project.summary }}</p>
     </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="research-section research-milestones">
+  <h2>Milestones &amp; Publications</h2>
+  <div class="timeline">
+    {% for milestone in site.data.milestones %}
+    <div class="timeline-item">
+      <span class="timeline-date">{{ milestone.year }}</span>
+      <p><strong>{{ milestone.title }}</strong> – {{ milestone.summary }}</p>
+    </div>
     {% endfor %}
   </div>
 </section>
