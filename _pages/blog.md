@@ -1,8 +1,12 @@
 ---
 title: "Blog"
 permalink: /blog/
-layout: posts
-author_profile: true
+layout: blog
+hero_title: "Blog"
+hero_tagline: "Thoughts, tutorials, and updates"
+hero_actions:
+  - text: "Subscribe"
+    url: /feed.xml
 ---
 
 Welcome to the blog.
