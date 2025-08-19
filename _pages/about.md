@@ -2,11 +2,7 @@
 permalink: /about/
 title: "About"
 layout: profile
-hero_title: "About Me"
-hero_tagline: "Software Engineer & AI Enthusiast"
 author_profile: true
-hero_image: "/assets/images/bio-photo.jpg"
-hero_image_alt: "Kiran Shahi"
 ---
 
 <div class="about-grid">
