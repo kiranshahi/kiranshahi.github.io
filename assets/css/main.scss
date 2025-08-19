@@ -193,7 +193,8 @@ button,
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 3rem;
   transform: translateY(-50%);
   font-size: clamp(2rem, 4vw, 3rem);
   opacity: 0.1;
@@ -210,6 +211,7 @@ button,
   padding: 1.5rem 1rem;
   text-align: center;
   position: relative;
+  width: 100%;
 }
 
 .lets-connect {
