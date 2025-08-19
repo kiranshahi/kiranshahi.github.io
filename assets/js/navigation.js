@@ -6,6 +6,8 @@
     if (!toggle || !menu || !nav) return;
 
     const links = menu.querySelectorAll('a');
+    const firstLink = links[0];
+    const lastLink = links[links.length - 1];
 
     function isMobile() {
       return window.getComputedStyle(toggle).display !== 'none';
@@ -55,8 +57,21 @@
     });
 
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      if (toggle.getAttribute('aria-expanded') !== 'true') return;
+
+      if (e.key === 'Escape') {
         closeMenu();
+        return;
+      }
+
+      if (e.key === 'Tab' && links.length) {
+        if (e.shiftKey && document.activeElement === firstLink) {
+          e.preventDefault();
+          lastLink.focus();
+        } else if (!e.shiftKey && document.activeElement === lastLink) {
+          e.preventDefault();
+          firstLink.focus();
+        }
       }
     });
 
