@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<article class="post-detail">
+  <header class="post-detail__header">
+    <h1 class="post-detail__title">{{ page.title }}</h1>
+    <div class="post-detail__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.last_modified_at %}
+      <span class="post-detail__updated"> • Updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}</span>
+      {% endif %}
+      {% assign words = content | strip_html | number_of_words %}
+      {% assign mins = words | divided_by:200 | plus:1 %}
+      <span class="post-detail__reading-time"> • {{ mins }} min read</span>
+    </div>
+  </header>
+
+  <div class="post-detail__content">
+    {{ content }}
+  </div>
+
+  <footer class="post-detail__footer">
+    {% if page.share %}
+    <section class="post-detail__share">
+      <h2 class="post-detail__footer-title">Share</h2>
+      {% include share.html %}
+    </section>
+    {% endif %}
+
+    {% if page.related %}
+    <section class="post-detail__related">
+      <h2 class="post-detail__footer-title">Related Posts</h2>
+      {% include related.html %}
+    </section>
+    {% endif %}
+
+    <nav class="post-detail__pagination">
+      {% if page.previous.url %}
+      <a class="post-detail__prev" href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a class="post-detail__next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+      {% endif %}
+    </nav>
+
+    {% if page.comments %}
+    <section class="post-detail__comments">
+      {% include comments.html %}
+    </section>
+    {% endif %}
+  </footer>
+</article>

@@ -776,3 +776,50 @@ details summary {
   line-height: 1.6;
 }
 
+
+/* Post detail layout */
+.post-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.post-detail__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.post-detail__meta {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.post-detail__content {
+  line-height: 1.8;
+}
+
+.post-detail__footer {
+  margin-top: 3rem;
+}
+
+.post-detail__footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-detail__share,
+.post-detail__related,
+.post-detail__comments {
+  margin-top: 2rem;
+}
+
+.post-detail__pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.post-detail__pagination a {
+  text-decoration: none;
+  font-weight: 600;
+}
