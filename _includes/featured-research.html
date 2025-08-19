@@ -13,13 +13,14 @@
   </div>
 </section>
 
-<section class="research-section research-milestones">
+  <section class="research-section research-milestones">
   <h2>Milestones &amp; Publications</h2>
-  <div class="timeline">
+  <div class="milestones-grid">
     {% for milestone in site.data.milestones %}
-    <div class="timeline-item">
-      <span class="timeline-date">{{ milestone.year }}</span>
-      <p><strong>{{ milestone.title }}</strong> – {{ milestone.summary }}</p>
+    <div class="milestone-card">
+      <h3 class="milestone-year">{{ milestone.year }}</h3>
+      <p class="milestone-title">{{ milestone.title }}</p>
+      <p class="milestone-summary">{{ milestone.summary }}</p>
     </div>
     {% endfor %}
   </div>
