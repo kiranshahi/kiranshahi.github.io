@@ -187,7 +187,31 @@ button,
   }
 }
 
-.page__hero,
+.hero-icons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-50%);
+  font-size: clamp(2rem, 4vw, 3rem);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page__hero .hero-text,
+.page__hero img {
+  position: relative;
+  z-index: 1;
+}
+.page__hero {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
 .lets-connect {
   padding: 1.5rem 1rem;
   text-align: center;
