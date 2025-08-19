@@ -15,7 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 title: Kiran Shahi
 email: kiran.shahi.c3@gmail.com
-description: "Kiran Shahi is a tech enthusiast who loves to solve real-world challenges via computer programming. He is an aspiring Data Scientist and Artificial Intelligence engineer who graduated from Brunel University with MSc in Artificial Intelligence degree."
+description: >
+  Kiran Shahi is a tech enthusiast who loves to solve real-world challenges via
+  computer programming. He is an aspiring Data Scientist and Artificial
+  Intelligence engineer who graduated from Brunel University with MSc in
+  Artificial Intelligence degree.
 github_username: kiranshahi
 minimal_mistakes_skin: default
 search: true
