@@ -544,6 +544,30 @@ button,
   line-height: 1.6;
 }
 
+.research-section {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--color-background);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.research-section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.research-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.research-milestones {
+  margin-top: 2rem;
+}
+
 details {
   margin-top: 0.5rem;
 }
@@ -616,6 +640,9 @@ details summary {
   }
 
   .about-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .research-overview {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
