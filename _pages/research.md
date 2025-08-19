@@ -3,6 +3,13 @@ title: "Research"
 layout: profile
 permalink: /research/
 author_profile: true
+hero_title: "Research"
+hero_tagline: "Exploring computer vision and AI"
+hero_actions:
+  - text: "Current Projects"
+    url: "#current-projects"
+  - text: "Contact"
+    url: "/contact/"
 ---
 
 <div class="research-overview">
