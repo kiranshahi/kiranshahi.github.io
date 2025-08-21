@@ -629,17 +629,52 @@ details summary {
 }
 
 .milestone-card {
-  padding: 1rem;
+  position: relative;
+  padding: 1rem 1rem 1rem calc(1rem + 6px);
   background: var(--color-background);
-  border-left: 4px solid var(--color-primary);
   border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
+.milestone-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  border-radius: 4px 0 0 4px;
+  background: var(--color-primary);
+}
+
 .milestone-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
+}
+
+.milestones-grid .milestone-card:nth-child(6n+1)::before {
+  background: linear-gradient(180deg, #ff7e5f, #feb47b);
+}
+
+.milestones-grid .milestone-card:nth-child(6n+2)::before {
+  background: linear-gradient(180deg, #6a11cb, #2575fc);
+}
+
+.milestones-grid .milestone-card:nth-child(6n+3)::before {
+  background: linear-gradient(180deg, #43cea2, #185a9d);
+}
+
+.milestones-grid .milestone-card:nth-child(6n+4)::before {
+  background: linear-gradient(180deg, #f7971e, #ffd200);
+}
+
+.milestones-grid .milestone-card:nth-child(6n+5)::before {
+  background: linear-gradient(180deg, #ff512f, #dd2476);
+}
+
+.milestones-grid .milestone-card:nth-child(6n)::before {
+  background: linear-gradient(180deg, #24c6dc, #514a9d);
 }
 
 .milestone-year {
