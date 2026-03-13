@@ -11,7 +11,7 @@ A full academic CV is available for download below.
 
 ## Profile Summary
 
-Researcher and software engineer with interests in artificial intelligence, computer vision, medical imaging, explainable AI, and sustainable engineering systems. Experienced in both research-oriented development and production-focused software engineering.
+Researcher and software engineer with interests in artificial intelligence, computer vision, medical imaging, explainable AI, and research software systems. Experienced in both research-oriented development and production-focused software engineering.
 
 ## Research Areas
 
@@ -21,7 +21,6 @@ Researcher and software engineer with interests in artificial intelligence, comp
 - Weakly Supervised Learning
 - Uncertainty-Aware AI
 - Video Matting
-- Sustainable Engineering AI
 - Research Software Systems
 
 ## Education
