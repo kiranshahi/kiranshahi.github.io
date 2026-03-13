@@ -21,10 +21,6 @@ I am currently developing an uncertainty-focused evaluation pipeline for lung se
 
 I am exploring future work in temporal video matting, with an emphasis on explainable confidence maps and robust edge-aware modeling.
 
-### Software development in solar glare analysis
-
-I continue to build and refine engineering software for solar glare analysis, route-based hazard evaluation, and sustainability-focused analytical workflows.
-
 ### Academic profile development
 
 I am actively growing my publication roadmap, open-source portfolio, and long-term research direction in applied AI.

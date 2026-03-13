@@ -36,15 +36,6 @@ This line of work explores temporal video matting with a focus on confidence-awa
 
 Links: Research Note | Concept Page
 
-### AI-Assisted Solar Glare Analysis for Sustainable Engineering Systems
-
-Kiran Shahi  
-Applied Research / Software-Oriented Work
-
-This work explores the intersection of visual AI, geometry, and sustainability by developing tools for solar glare analysis, glare risk assessment, and engineering-oriented visual simulation systems.
-
-Links: Project | Demo | Technical Notes
-
 ## Research Themes
 
 My publication roadmap currently centers on the following themes:
@@ -53,7 +44,7 @@ My publication roadmap currently centers on the following themes:
 - Explainable AI in healthcare
 - Uncertainty-aware segmentation
 - Temporal vision and video matting
-- AI for sustainable engineering and solar analytics
+- AI for sustainable engineering and environmental analytics
 
 ## Notes
 
