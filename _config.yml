@@ -1,138 +1,74 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: Dr. Aarya Sharma
+email: aarya.sharma@university.edu
+url: "https://kiranshahi.github.io"
+baseurl: ""
+description: "Academic portfolio of Dr. Aarya Sharma, AI researcher in computer vision, medical imaging, and sustainable AI systems."
+lang: en
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Kiran Shahi
-email: kiran.shahi.c3@gmail.com
-description: >
-  Kiran Shahi is a tech enthusiast who loves to solve real-world challenges via
-  computer programming. He is an aspiring Data Scientist and Artificial
-  Intelligence engineer who graduated from Brunel University with MSc in
-  Artificial Intelligence degree.
-github_username: kiranshahi
-minimal_mistakes_skin: default
-search: true
-url: "https://kirans.me"
-logo: "/assets/images/kiran-shahi.JPG"
-
-# Build settings
+theme: null
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+timezone: UTC
 
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
-author:
-  name   : "Kiran Shahi"
-  avatar : "/assets/images/kiran-shahi.JPG"
-  bio    : "Software engineer by profession and problem solver by heart."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://kirans.me/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/kiranshahi"
-    - label: "Linkedin"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/kiranshahi/"
-
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/kiranshahi"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/kiranshahi/"
-    - label: "Google Scholar"
-      icon: "fa-brands fa-google-scholar"
-      url: "https://scholar.google.com/citations?user=UY8GlccAAAAJ&hl=en"
-      color: "#4285F4"
-    - label: "ORCID"
-      icon: "fab fa-orcid"
-      url: "https://orcid.org/0000-0003-3739-5985"
-      color: "#A6CE39"
-    # add any other external profiles here
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 defaults:
-  # _posts
+  - scope:
+      path: ""
+    values:
+      layout: default
   - scope:
       path: ""
       type: posts
     values:
-      layout: post
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
+      layout: default
+      section: news
   - scope:
-      path: "_pages"
-      type: pages
+      path: ""
+      type: projects
     values:
-      layout: single
-      author_profile: true
+      layout: default
+      section: projects
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+nav_items:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: CV
+    url: /cv/
+  - title: Contact
+    url: /contact/
 
+author:
+  name: Dr. Aarya Sharma
+  title: AI Researcher | Computer Vision | Medical Imaging | Applied AI
+  affiliation: Department of Computing, Horizon Institute of Technology
+  tagline: Building trustworthy AI systems that improve healthcare and sustainable urban environments.
+  photo: /assets/images/bio-photo.jpg
 
-comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-light" # "github-dark"
-    issue_term: "pathname"
-repository: "kiranshahi/comments"
-jekyll_seo_tag: true
 social:
-  type:  "Person" # Person or Organization (defaults to Person)
-  name:  "Kiran Shahi" # If the user or organization name differs from the site's name
-  jobTitle: "Software Engineer"
-  links:
-    - "https://www.instagram.com/kirans.me/"
-    - "https://www.linkedin.com/in/kiranshahi/"
-    - "https://github.com/kiranshahi"
-    - "https://stackoverflow.com/users/5740382/kiran-shahi"
+  github: https://github.com/aaryasharma
+  scholar: https://scholar.google.com/citations?user=EXAMPLEID
+  orcid: https://orcid.org/0000-0000-0000-0000
+  linkedin: https://www.linkedin.com/in/aaryasharma
+  researchgate: https://www.researchgate.net/profile/Aarya-Sharma
+
+cv_file: /assets/files/aarya-sharma-cv.pdf
+
+exclude:
+  - vendor
+  - node_modules
+  - README.md
