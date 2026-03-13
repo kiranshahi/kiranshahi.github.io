@@ -22,14 +22,3 @@
     code: "#"
   abstract: "A fast and reliable video matting approach for low-light and motion-heavy clinical scene analysis."
 
-- title: "Solar Glare Risk Forecasting with Scene-Aware Vision Models"
-  authors: "Aarya Sharma, Noor Al-Hassan, Kate Miller"
-  venue: "Applied Energy"
-  year: 2023
-  tags: [sustainability, solar-glare, applied-ai]
-  links:
-    pdf: "#"
-    arxiv: "#"
-    doi: "#"
-    code: "#"
-  abstract: "This work combines geospatial and vision features for proactive glare impact estimation around photovoltaic installations."
