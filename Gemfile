@@ -18,3 +18,6 @@ end
 
 # Additional tooling for CI
 gem "html-proofer"
+
+# Required by Faraday v2 middleware used in some GitHub Pages dependency stacks
+gem "faraday-retry"

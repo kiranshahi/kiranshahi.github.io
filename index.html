@@ -1,11 +1,44 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-title: "Kiran Shahi | AI Researcher, Computer Vision & Software Engineer"
-description: "Official website of Kiran Shahi — AI researcher in computer vision, video matting, and deep learning. Explore research papers, projects, and professional profiles."
-layout: home
-author_profile: true
-hero_title: "Kiran Shahi"
-hero_tagline: "AI Researcher, Computer Vision & Software Engineer"
+title: Home
+permalink: /
+layout: default
 ---
+<section class="hero">
+  <div>
+    <p class="meta">{{ site.author.affiliation }}</p>
+    <h1>{{ site.author.name }}</h1>
+    <h3>{{ site.author.title }}</h3>
+    <p>{{ site.author.tagline }}</p>
+    <div class="tags">
+      <span class="tag">Computer Vision</span>
+      <span class="tag">Medical Imaging</span>
+      <span class="tag">Explainable AI</span>
+      <span class="tag">Solar Glare Analysis</span>
+    </div>
+    <div class="btn-row">
+      <a class="btn primary" href="{{ '/cv/' | relative_url }}">View CV</a>
+      <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="btn" href="{{ '/contact/' | relative_url }}">Contact</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ site.author.photo | relative_url }}" alt="Portrait of {{ site.author.name }}">
+  </div>
+</section>
+
+<section class="section card">
+  <h2>Research Vision</h2>
+  <p>I design research-driven AI systems that are robust, interpretable, and deployable in real-world environments. My work sits at the intersection of computer vision, medical imaging, and sustainable infrastructure analytics.</p>
+</section>
+
+<section class="section">
+  <h2>Latest News</h2>
+  <ul class="list-clean">
+    {% for post in site.posts limit: 4 %}
+      <li class="news-item">
+        <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong>
+        <div class="meta">{{ post.date | date: "%b %d, %Y" }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
