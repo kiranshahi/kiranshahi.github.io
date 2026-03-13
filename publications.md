@@ -44,7 +44,6 @@ My publication roadmap currently centers on the following themes:
 - Explainable AI in healthcare
 - Uncertainty-aware segmentation
 - Temporal vision and video matting
-- AI for sustainable engineering and environmental analytics
 
 ## Notes
 

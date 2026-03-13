@@ -14,7 +14,6 @@ I welcome conversations related to:
 - Open-source projects
 - Computer vision and medical imaging
 - Explainable AI
-- AI for sustainable engineering systems
 
 ## Email
 
@@ -30,4 +29,4 @@ your-email@example.com
 
 ## Collaboration Note
 
-I am particularly interested in interdisciplinary collaborations that connect AI research, scientific rigor, and practical systems. If your work aligns with computer vision, medical imaging, explainable AI, or sustainable engineering applications, I would be glad to connect.
+I am particularly interested in interdisciplinary collaborations that connect AI research, scientific rigor, and practical systems. If your work aligns with computer vision, medical imaging, explainable AI, or applied AI software applications, I would be glad to connect.
