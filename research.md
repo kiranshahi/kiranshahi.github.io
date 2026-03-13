@@ -31,10 +31,6 @@ Reliable deployment requires models to know when they may be wrong. I am interes
 
 I am interested in temporal consistency, edge fidelity, and memory mechanisms for video understanding problems, particularly in tasks such as real-time background matting.
 
-## AI for Sustainable Systems
-
-I also work on AI-driven and physics-informed tools for daylight evaluation and engineering software. This reflects my interest in applying visual intelligence beyond traditional academic benchmarks toward sustainability and built-environment challenges.
-
 ## Research Statement
 
-My research aims to build AI systems that are not only accurate, but also interpretable, robust, and usable in real-world settings. I am especially interested in domains where trust matters, such as healthcare and sustainability. Across my projects, I try to combine principled methodology, strong evaluation, and practical deployment thinking so that the resulting work contributes both to science and to real applications.
+My research aims to build AI systems that are not only accurate, but also interpretable, robust, and usable in real-world settings. I am especially interested in domains where trust matters, such as healthcare. Across my projects, I try to combine principled methodology, strong evaluation, and practical deployment thinking so that the resulting work contributes both to science and to real applications.
