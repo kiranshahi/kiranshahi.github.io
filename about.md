@@ -3,21 +3,43 @@ title: About
 permalink: /about/
 ---
 
-## Biography
-Dr. Aarya Sharma is an AI researcher focused on computer vision and intelligent systems for healthcare and built environments. She works on bridging rigorous machine learning research with production-ready software systems.
+# About
 
-## Current Role
-Assistant Professor (Research), Department of Computing, Horizon Institute of Technology.
+I am a researcher and software engineer working at the intersection of artificial intelligence, computer vision, medical imaging, and engineering software systems. My goal is to develop AI methods that are both scientifically meaningful and practically deployable.
 
-## Research Interests
-- Computer Vision
-- Medical Imaging
+My work combines two complementary directions. The first is research in visual AI, particularly in medical imaging, explainability, segmentation, localization, and temporal vision problems. The second is applied software development, where I build engineering tools and intelligent platforms for real-world use cases such as solar glare analysis and daylight-related simulation systems.
+
+I am especially drawn to research questions that sit between disciplines: where physics-based reasoning, visual learning, uncertainty estimation, and system design come together. I believe some of the most valuable AI systems will emerge not from isolated models, but from careful integration of domain knowledge, trustworthy evaluation, and strong engineering.
+
+My current interests include:
+
+- Computer vision
+- Medical imaging AI
 - Explainable AI
-- Video Matting
-- AI for Sustainable Buildings
-- Solar Glare Analysis
+- Weakly supervised learning
+- Uncertainty-aware segmentation
+- Video matting and temporal vision
+- AI for sustainable buildings and solar analytics
+- Research software engineering
 
-## Academic Journey (Timeline)
-- **2025–Present:** Assistant Professor (Research), Horizon Institute of Technology  
-- **2021–2025:** Postdoctoral Fellow, Visual Intelligence Lab  
-- **2017–2021:** PhD in Computer Science, Vision & AI Track
+In the long term, I aim to build a strong research profile through publications, open-source tools, and impactful interdisciplinary projects, while contributing to both academia and research-driven product development.
+
+## Research Vision
+
+My broader vision is to contribute to AI systems that are:
+
+- Trustworthy, especially in healthcare and safety-critical settings
+- Interpretable, so their behavior can be understood and improved
+- Scientifically grounded, not just benchmark-driven
+- Deployable, with clear pathways to product or societal impact
+
+I am particularly interested in research that can evolve into long-term platforms, open tools, and collaborations across academia and industry.
+
+## Open To
+
+- Research collaboration
+- Joint publications
+- Interdisciplinary AI projects
+- Research internships or visiting opportunities
+- Open-source collaboration
+- Academic networking
