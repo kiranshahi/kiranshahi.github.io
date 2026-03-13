@@ -4,14 +4,30 @@ permalink: /contact/
 ---
 
 # Contact
-I welcome collaborations on academic research, applied AI systems, and interdisciplinary projects.
 
-- **Email:** [{{ site.email }}](mailto:{{ site.email }})
-- **Affiliation:** {{ site.author.affiliation }}
+Thank you for visiting my website.
 
-## Professional Profiles
-<ul>
-{% for social in site.data.social %}
-  <li><a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.name }}</a></li>
-{% endfor %}
-</ul>
+I welcome conversations related to:
+
+- Research collaboration
+- Academic networking
+- Open-source projects
+- Computer vision and medical imaging
+- Explainable AI
+- AI for sustainable engineering systems
+
+## Email
+
+your-email@example.com
+
+## Academic Profiles
+
+- Google Scholar
+- ORCID
+- GitHub
+- LinkedIn
+- ResearchGate
+
+## Collaboration Note
+
+I am particularly interested in interdisciplinary collaborations that connect AI research, scientific rigor, and practical systems. If your work aligns with computer vision, medical imaging, explainable AI, or sustainable engineering applications, I would be glad to connect.

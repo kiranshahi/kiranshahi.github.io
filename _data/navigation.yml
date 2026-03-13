@@ -1,9 +1,17 @@
 main:
+  - title: "Home"
+    url: /
   - title: "About"
     url: /about/
   - title: "Research"
     url: /research/
-  - title: "Blog"
-    url: /blog/
+  - title: "Publications"
+    url: /publications/
+  - title: "Projects"
+    url: /projects/
+  - title: "CV"
+    url: /cv/
+  - title: "News"
+    url: /news/
   - title: "Contact"
     url: /contact/

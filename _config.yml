@@ -1,8 +1,8 @@
-title: Dr. Aarya Sharma
-email: aarya.sharma@university.edu
+title: Kiran Shahi
+email: your-email@example.com
 url: "https://kiranshahi.github.io"
 baseurl: ""
-description: "Academic portfolio of Dr. Aarya Sharma, AI researcher in computer vision, medical imaging, and sustainable AI systems."
+description: "Personal academic website of Kiran Shahi, featuring research in artificial intelligence, computer vision, medical imaging, explainable AI, solar glare analysis, and research-driven software systems."
 lang: en
 
 theme: null
@@ -43,28 +43,32 @@ nav_items:
     url: /
   - title: About
     url: /about/
+  - title: Research
+    url: /research/
   - title: Publications
     url: /publications/
   - title: Projects
     url: /projects/
   - title: CV
     url: /cv/
+  - title: News
+    url: /news/
   - title: Contact
     url: /contact/
 
 author:
-  name: Dr. Aarya Sharma
-  title: AI Researcher | Computer Vision | Medical Imaging | Applied AI
-  affiliation: Department of Computing, Horizon Institute of Technology
-  tagline: Building trustworthy AI systems that improve healthcare and sustainable urban environments.
-  photo: /assets/images/bio-photo.jpg
+  name: Kiran Shahi
+  title: AI Researcher | Computer Vision Engineer | Applied AI for Medical Imaging and Sustainable Systems
+  affiliation: AI Researcher | Computer Vision | Medical Imaging | Sustainable AI Systems
+  tagline: Building research-driven AI systems for healthcare, vision, and engineering applications.
+  photo: https://avatars.githubusercontent.com/u/15968059?v=4
 
 social:
-  github: https://github.com/aaryasharma
-  scholar: https://scholar.google.com/citations?user=EXAMPLEID
-  orcid: https://orcid.org/0000-0000-0000-0000
-  linkedin: https://www.linkedin.com/in/aaryasharma
-  researchgate: https://www.researchgate.net/profile/Aarya-Sharma
+  github: https://github.com/
+  scholar: https://scholar.google.com/
+  orcid: https://orcid.org/
+  linkedin: https://www.linkedin.com/
+  researchgate: https://www.researchgate.net/
 
 cv_file: /assets/files/aarya-sharma-cv.pdf
 

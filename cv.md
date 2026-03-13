@@ -5,27 +5,76 @@ permalink: /cv/
 
 # Curriculum Vitae
 
-<a class="btn primary" href="{{ site.cv_file | relative_url }}" download>Download CV (PDF)</a>
+A full academic CV is available for download below.
+
+<a class="btn primary" href="{{ site.cv_file | relative_url }}" download>Download CV</a>
+
+## Profile Summary
+
+Researcher and software engineer with interests in artificial intelligence, computer vision, medical imaging, explainable AI, and sustainable engineering systems. Experienced in both research-oriented development and production-focused software engineering.
+
+## Research Areas
+
+- Computer Vision
+- Medical Imaging
+- Explainable AI
+- Weakly Supervised Learning
+- Uncertainty-Aware AI
+- Video Matting
+- Sustainable Engineering AI
+- Research Software Systems
 
 ## Education
-- PhD, Computer Science (Vision & AI), Northbridge University, 2021
-- MSc, Artificial Intelligence, Northbridge University, 2017
-- BEng, Computer Engineering, Tech Valley Institute, 2015
+
+**[Add your degree here]**  
+University / Institution  
+Year - Year
+
+**[Add further education here]**
 
 ## Experience
-- Assistant Professor (Research), Horizon Institute of Technology (2025–Present)
-- Postdoctoral Fellow, Visual Intelligence Lab (2021–2025)
-- Research Intern, Applied AI Systems Group (2019)
 
-## Skills
-- **Languages:** Python, C++, JavaScript, SQL
-- **Frameworks:** PyTorch, TensorFlow, OpenCV, JAX
-- **Research Methods:** Representation learning, model explainability, deployment pipelines
+**Software Engineer / Research-Oriented Developer**  
+[Organization Name]  
+[Year - Present]
 
-## Awards
-- Early Career Research Award, 2024
-- Best Paper Finalist, CVPR Workshop 2023
+Working on engineering software systems, AI-enabled tools, full-stack development, and domain-specific analytical platforms.
 
-## Reviewer & Editorial Roles
-- Reviewer: IEEE TMI, Medical Image Analysis, CVPR, MICCAI
-- Guest Editor (Special Issue): AI in Sustainable Infrastructure
+## Selected Technical Skills
+
+- Python
+- PyTorch
+- Computer Vision
+- Medical Imaging Analysis
+- TypeScript
+- Angular
+- C#
+- .NET
+- SQL Server
+- Jekyll / GitHub Pages
+- Research Writing
+- Data Visualization
+
+## Research Output
+
+- Preprints
+- Ongoing manuscripts
+- Research software tools
+- Technical documentation
+- Open-source repositories
+
+## Academic Activities
+
+- Independent research
+- Technical writing
+- Scientific figure design
+- Research software prototyping
+- Interdisciplinary project development
+
+## Awards / Recognition
+
+Add scholarships, awards, distinctions, invited talks, or recognition here.
+
+## Reviewer / Academic Service
+
+Add reviewing roles, editorial activities, conference service, or professional memberships here.

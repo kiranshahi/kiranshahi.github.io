@@ -5,40 +5,65 @@ layout: default
 ---
 <section class="hero">
   <div>
-    <p class="meta">{{ site.author.affiliation }}</p>
-    <h1>{{ site.author.name }}</h1>
-    <h3>{{ site.author.title }}</h3>
-    <p>{{ site.author.tagline }}</p>
-    <div class="tags">
-      <span class="tag">Computer Vision</span>
-      <span class="tag">Medical Imaging</span>
-      <span class="tag">Explainable AI</span>
-      <span class="tag">Solar Glare Analysis</span>
-    </div>
+    <h1>Kiran Shahi</h1>
+    <h3>AI Researcher | Computer Vision Engineer | Applied AI for Medical Imaging and Sustainable Systems</h3>
+    <p>I build research-driven AI systems at the intersection of computer vision, medical imaging, explainable AI, and engineering software. My work combines scientific research with real-world product development, with a focus on trustworthy AI, visual intelligence, and deployable tools for healthcare and sustainability.</p>
     <div class="btn-row">
-      <a class="btn primary" href="{{ '/cv/' | relative_url }}">View CV</a>
-      <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="btn primary" href="{{ '/publications/' | relative_url }}">View Publications</a>
+      <a class="btn" href="{{ '/projects/' | relative_url }}">Explore Projects</a>
+      <a class="btn" href="{{ '/cv/' | relative_url }}">Download CV</a>
       <a class="btn" href="{{ '/contact/' | relative_url }}">Contact</a>
     </div>
   </div>
   <div class="card">
-    <img src="{{ site.author.photo | relative_url }}" alt="Portrait of {{ site.author.name }}">
+    <img src="{{ site.author.photo }}" alt="Portrait of Kiran Shahi">
   </div>
 </section>
 
 <section class="section card">
-  <h2>Research Vision</h2>
-  <p>I design research-driven AI systems that are robust, interpretable, and deployable in real-world environments. My work sits at the intersection of computer vision, medical imaging, and sustainable infrastructure analytics.</p>
+  <h2>Welcome</h2>
+  <p>Welcome to my academic website. I am a researcher and software engineer interested in developing practical and scientifically grounded AI systems. My work spans medical image analysis, explainable deep learning, video and visual understanding, and solar glare / daylight analysis tools for engineering applications.</p>
+  <p>I am particularly interested in research that bridges theory and deployment: building systems that are not only accurate, but also interpretable, useful, and scalable in real-world environments.</p>
 </section>
 
 <section class="section">
-  <h2>Latest News</h2>
-  <ul class="list-clean">
-    {% for post in site.posts limit: 4 %}
-      <li class="news-item">
-        <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong>
-        <div class="meta">{{ post.date | date: "%b %d, %Y" }}</div>
-      </li>
-    {% endfor %}
+  <h2>Featured Research Areas</h2>
+  <div class="grid-2">
+    <article class="card">
+      <h3>Medical Imaging AI</h3>
+      <p>Developing robust and interpretable methods for chest X-ray analysis, disease localization, segmentation, and uncertainty-aware clinical AI.</p>
+    </article>
+    <article class="card">
+      <h3>Computer Vision</h3>
+      <p>Exploring weak supervision, visual explanations, temporal modeling, and next-generation vision systems for challenging real-world problems.</p>
+    </article>
+    <article class="card">
+      <h3>Explainable AI</h3>
+      <p>Studying how model decisions can be interpreted and trusted, especially in high-stakes domains such as healthcare.</p>
+    </article>
+    <article class="card">
+      <h3>Sustainable Engineering AI</h3>
+      <p>Applying AI and physics-informed analysis to solar glare, daylight performance, and built-environment software systems.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section card">
+  <h2>Featured Projects Preview</h2>
+  <ul>
+    <li>Weakly Supervised Pneumonia Localization from Chest X-Rays</li>
+    <li>Uncertainty-Aware Lung Segmentation</li>
+    <li>Solar Glare Analysis Platform</li>
+    <li>Temporal Video Matting Research</li>
   </ul>
+</section>
+
+<section class="section card">
+  <h2>Quick Bio</h2>
+  <p>Kiran Shahi is a researcher and software engineer working in artificial intelligence, computer vision, medical imaging, explainable AI, and sustainable engineering software. His work focuses on building trustworthy and deployable AI systems that connect scientific research with practical impact.</p>
+</section>
+
+<section class="section card">
+  <h2>Closing Statement</h2>
+  <p>I am always interested in research collaborations, interdisciplinary projects, and opportunities that combine scientific rigor, software engineering, and real-world impact.</p>
 </section>
