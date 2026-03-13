@@ -1,3 +1,18 @@
-<header class="site-header">
-  {% include navigation.html %}
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      {% for item in site.nav_items %}
+        {% assign is_active = false %}
+        {% if page.url == item.url %}
+          {% assign is_active = true %}
+        {% elsif item.url != '/' and page.url contains item.url %}
+          {% assign is_active = true %}
+        {% endif %}
+        <a href="{{ item.url | relative_url }}" class="nav-link{% if is_active %} active{% endif %}">{{ item.title }}</a>
+      {% endfor %}
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color mode">🌙</button>
+    </nav>
+  </div>
 </header>
