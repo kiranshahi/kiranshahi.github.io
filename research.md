@@ -33,7 +33,7 @@ I am interested in temporal consistency, edge fidelity, and memory mechanisms fo
 
 ## AI for Sustainable Systems
 
-I also work on AI-driven and physics-informed tools for solar glare analysis, daylight evaluation, and engineering software. This reflects my interest in applying visual intelligence beyond traditional academic benchmarks toward sustainability and built-environment challenges.
+I also work on AI-driven and physics-informed tools for daylight evaluation and engineering software. This reflects my interest in applying visual intelligence beyond traditional academic benchmarks toward sustainability and built-environment challenges.
 
 ## Research Statement
 

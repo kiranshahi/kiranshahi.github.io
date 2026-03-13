@@ -20,7 +20,6 @@ A clean, modern, GitHub Pages-compatible personal researcher website template.
 │   └── 2026-01-10-new-paper-tmi.md
 ├── _projects/
 │   ├── clinical-vision-stack.md
-│   └── solar-glare-intelligence.md
 ├── assets/
 │   ├── css/style.css
 │   ├── js/main.js
