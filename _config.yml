@@ -1,6 +1,6 @@
 title: Kiran Shahi
 email: your-email@example.com
-url: "https://kiranshahi.github.io"
+url: "https://kirans.me"
 baseurl: ""
 description: "Personal academic website of Kiran Shahi, featuring research in artificial intelligence, computer vision, medical imaging, explainable AI, and research-driven software systems."
 lang: en
@@ -63,11 +63,11 @@ author:
   photo: https://avatars.githubusercontent.com/u/15968059?v=4
 
 social:
-  github: https://github.com/
-  scholar: https://scholar.google.com/
-  orcid: https://orcid.org/
-  linkedin: https://www.linkedin.com/
-  researchgate: https://www.researchgate.net/
+  github: https://github.com/kiranshahi
+  scholar: https://scholar.google.com/citations?user=UY8GlccAAAAJ
+  orcid: https://orcid.org/0000-0003-3739-5985
+  linkedin: https://www.linkedin.com/in/kiranshahi
+  researchgate: https://www.researchgate.net/profile/Kiran-Shahi
 
 cv_file: /assets/files/aarya-sharma-cv.pdf
 
