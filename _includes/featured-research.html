@@ -1,27 +1,40 @@
-<section class="featured-research research-section">
-  <h2>Project Highlights</h2>
-  <div class="research-grid">
-    {% for project in site.data.research %}
-    <a class="research-card" href="{{ project.link }}">
-      {% if project.image %}
-      <img class="research-card__image" src="{{ project.image }}" alt="{% if project.alt %}{{ project.alt }}{% else %}{{ project.title }} project image{% endif %}" width="400" height="200" loading="lazy">
-      {% endif %}
-      <h3 class="research-card__title">{{ project.title }}</h3>
-      <p class="research-card__summary">{{ project.summary }}</p>
-    </a>
-    {% endfor %}
-  </div>
-</section>
+<section class="featured-research-section">
 
-  <section class="research-section research-milestones">
-  <h2>Milestones &amp; Publications</h2>
-  <div class="milestones-grid">
-    {% for milestone in site.data.milestones %}
-    <div class="milestone-card">
-      <h3 class="milestone-year">{{ milestone.year }}</h3>
-      <p class="milestone-title">{{ milestone.title }}</p>
-      <p class="milestone-summary">{{ milestone.summary }}</p>
-    </div>
-    {% endfor %}
+  <div class="section-heading center">
+    <span>Featured Work</span>
+    <h2>Research & Projects</h2>
+    <p>Selected research contributions and AI engineering projects.</p>
   </div>
+
+  <div class="featured-grid">
+
+    {% for project in site.data.research %}
+
+    <a class="featured-card" href="{{ project.link }}">
+
+      {% if project.image %}
+      <div class="featured-image-wrapper">
+        <img class="featured-image" src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">
+      </div>
+      {% endif %}
+
+      <div class="featured-content">
+
+        {% if project.category %}
+        <span class="project-tag">{{ project.category }}</span>
+        {% endif %}
+
+        <h3>{{ project.title }}</h3>
+
+        <p>{{ project.summary }}</p>
+
+        <div class="featured-link"> View Project <i class="fas fa-arrow-right"></i></div>
+
+      </div>
+    </a>
+
+    {% endfor %}
+
+  </div>
+
 </section>
