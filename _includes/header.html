@@ -1,7 +1,14 @@
 <header class="site-header" id="top">
   <div class="container nav-wrap">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">☰</button>
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Kiran Shahi home">
+      <span class="brand-mark">KS</span>
+      <span>{{ site.author.name | default: "Kiran Shahi" }}</span>
+    </a>
+    
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
       {% for item in site.nav_items %}
         {% assign is_active = false %}
