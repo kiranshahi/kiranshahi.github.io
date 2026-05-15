@@ -1,10 +1,23 @@
-    {% include head/custom.html %}
-  <title>Kiran Shahi | AI Researcher and Software Engineer</title>
-  <meta name="description" content="Personal academic website of Kiran Shahi, featuring research in artificial intelligence, computer vision, medical imaging, explainable AI, and research-driven software systems.">
+{% include head/custom.html %}
 
-  <link rel="canonical" href="https://kirans.me/">
-  <meta property="og:title" content="Kiran Shahi">
-  <meta property="og:description" content="AI researcher and software engineer working in computer vision, medical imaging, explainable AI, and research software systems.">
-  <meta property="og:url" content="https://kirans.me/">
-  <meta property="og:site_name" content="Kiran Shahi">
-  <meta property="og:type" content="profile">
+<title>
+  {% if page.title %}
+    {{ page.title }} | Kiran Shahi
+  {% else %}
+    Kiran Shahi | AI Researcher and Software Engineer
+  {% endif %}
+</title>
+
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Personal academic website of Kiran Shahi, featuring research in artificial intelligence, computer vision, medical imaging, explainable AI, and research-driven software systems.{% endif %}">
+
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | Kiran Shahi{% else %}Kiran Shahi{% endif %}">
+
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}AI researcher and software engineer working in computer vision, medical imaging, explainable AI, and research software systems.{% endif %}">
+
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="Kiran Shahi">
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/15968059?v=4">
