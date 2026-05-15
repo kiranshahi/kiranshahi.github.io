@@ -13,32 +13,71 @@
 
 {% if page.url == "/" %}
 <script type="application/ld+json">
-{
+     {
   "@context": "https://schema.org",
-  "@type": "Person",
+  "@type": "ProfilePage",
+  "@id": "https://kirans.me/#profilepage",
   "name": "Kiran Shahi",
   "url": "https://kirans.me/",
-  "image": "https://kirans.me/assets/images/kiran-shahi.JPG",
-  "jobTitle": "AI Researcher & Software Engineer",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Brunel University"
-  },
-  "worksFor": {
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://kirans.me/#kiran-shahi",
+    "name": "Kiran Shahi",
+    "url": "https://kirans.me/",
+    "image": "https://avatars.githubusercontent.com/u/15968059?v=4",
+    "jobTitle": "Software Engineer and AI Researcher",
+    "description": "Kiran Shahi is a software engineer and AI researcher working in computer vision, medical imaging, explainable AI, and research-driven software systems.",
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Computer Vision",
+      "Medical Imaging",
+      "Explainable AI",
+      "Software Engineering",
+      "Research Software Systems"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Brunel University London"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "London Metropolitan University"
+      }
+    ],
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0003-3739-5985"
+      },
+      {
+        "@type": "PropertyValue",
+        "propertyID": "Scopus Author ID",
+        "value": "59773972700"
+      }
+    ],
+     "worksFor": {
     "@type": "Organization",
     "name": "MBS Survey Software Ltd"
   },
-  "sameAs": [
-    "https://dev.to/kiranshahi",
-    "https://scholar.google.com/citations?user=UY8GlccAAAAJ&hl=en",
-    "https://orcid.org/0000-0003-3739-5985",
-    "https://stackoverflow.com/users/5740382/kiran-shahi",
-    "https://www.linkedin.com/in/kiranshahi/",
-    "https://about.me/kiranshahi",
-    "https://www.kaggle.com/kiranshahi",
-    "https://github.com/kiranshahi",
-    "https://www.researchgate.net/profile/Kiran-Shahi"
-  ]
+    "sameAs": [
+     "https://dev.to/kiranshahi",
+      "https://github.com/kiranshahi",
+      "https://www.linkedin.com/in/kiranshahi",
+      "https://scholar.google.com/citations?user=UY8GlccAAAAJ",
+      "https://orcid.org/0000-0003-3739-5985",
+      "https://arxiv.org/a/shahi_k_1.html",
+      "https://stackoverflow.com/users/5740382/kiran-shahi",
+      "https://www.kaggle.com/kiranshahi",
+      "https://sciprofiles.com/profile/kiranshahi",
+      "https://www.scopus.com/authid/detail.uri?authorId=59773972700",
+      "https://www.researchgate.net/profile/Kiran-Shahi",
+      "https://www.slideshare.net/KiranShahi2",
+      "https://about.me/kiranshahi",
+      "https://www.quora.com/profile/Kiran-Shahi-Thakuri"
+    ]
+  }
 }
 </script>
 {% endif %}
