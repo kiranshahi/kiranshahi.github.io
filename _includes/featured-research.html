@@ -13,22 +13,22 @@
     <a class="featured-card" href="{{ project.link }}">
 
       {% if project.image %}
-      <div class="featured-image-wrapper">
-        <img class="featured-image" src="{{ project.image }}" alt="{{ project.title }}" loading="lazy">
+      <div class="featured-card__image-wrap">
+        <img class="featured-image" src="{{ project.image }}" alt="{% if project.alt %}{{ project.alt }}{% else %}{{ project.title }} project image{% endif %}" width="400" height="220" loading="lazy">
       </div>
       {% endif %}
 
-      <div class="featured-content">
-
+      <div class="featured-card__body">
         {% if project.category %}
         <span class="project-tag">{{ project.category }}</span>
+        {% else %}
+        <span class="project-pill">Research Project</span>
         {% endif %}
 
         <h3>{{ project.title }}</h3>
-
         <p>{{ project.summary }}</p>
-
-        <div class="featured-link"> View Project <i class="fas fa-arrow-right"></i></div>
+        
+        <span class="featured-card__link">View project <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
 
       </div>
     </a>
@@ -37,4 +37,21 @@
 
   </div>
 
+</section>
+
+<section class="milestones-section">
+  <div class="section-heading center">
+    <span>Progress</span>
+    <h2>Milestones &amp; Publications</h2>
+  </div>
+
+  <div class="milestones-grid">
+    {% for milestone in site.data.milestones %}
+    <article class="milestone-card">
+      <span class="milestone-year">{{ milestone.year }}</span>
+      <h3>{{ milestone.title }}</h3>
+      <p>{{ milestone.summary }}</p>
+    </article>
+    {% endfor %}
+  </div>
 </section>
