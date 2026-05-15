@@ -1,27 +1,34 @@
-<section class="featured-research research-section">
-  <h2>Project Highlights</h2>
-  <div class="research-grid">
-    {% for project in site.data.research %}
-    <a class="research-card" href="{{ project.link }}">
-      {% if project.image %}
-      <img class="research-card__image" src="{{ project.image }}" alt="{% if project.alt %}{{ project.alt }}{% else %}{{ project.title }} project image{% endif %}" width="400" height="200" loading="lazy">
-      {% endif %}
-      <h3 class="research-card__title">{{ project.title }}</h3>
-      <p class="research-card__summary">{{ project.summary }}</p>
-    </a>
-    {% endfor %}
+<section class="featured-projects">
+  <div class="section-heading section-heading--center">
+    <h2>Featured Projects</h2>
+    <span aria-hidden="true"></span>
+    <p>Selected research and development projects.</p>
   </div>
-</section>
 
-  <section class="research-section research-milestones">
-  <h2>Milestones &amp; Publications</h2>
-  <div class="milestones-grid">
-    {% for milestone in site.data.milestones %}
-    <div class="milestone-card">
-      <h3 class="milestone-year">{{ milestone.year }}</h3>
-      <p class="milestone-title">{{ milestone.title }}</p>
-      <p class="milestone-summary">{{ milestone.summary }}</p>
-    </div>
+  <div class="featured-projects__header-actions" aria-hidden="true">
+    <button type="button" tabindex="-1"><i class="fas fa-chevron-left"></i></button>
+    <button type="button" tabindex="-1"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <div class="project-grid">
+    {% for project in site.data.research limit: 4 %}
+    <a class="project-card" href="{{ project.link }}">
+      <div class="project-card__icon">
+        {% if project.icon %}
+          <i class="{{ project.icon }}" aria-hidden="true"></i>
+        {% else %}
+          <i class="fas fa-file-medical-alt" aria-hidden="true"></i>
+        {% endif %}
+      </div>
+
+      <h3>{{ project.title }}</h3>
+
+      {% if project.category %}
+      <span class="project-tag">{{ project.category }}</span>
+      {% else %}
+      <span class="project-tag">Computer Vision</span>
+      {% endif %}
+    </a>
     {% endfor %}
   </div>
 </section>
