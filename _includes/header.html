@@ -1,1 +1,26 @@
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">KS</span><span>Kiran Shahi</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button><nav id="site-nav" class="site-nav" aria-label="Main navigation">{% for item in site.nav_items %}{% assign active = false %}{% if page.url == item.url %}{% assign active = true %}{% elsif item.url != '/' and page.url contains item.url %}{% assign active = true %}{% endif %}<a href="{{ item.url | relative_url }}" class="nav-link{% if active %} active{% endif %}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a>{% endfor %}<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch colour mode">Theme</button></nav></div></header>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">KS</span>
+      <span>Kiran Shahi</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      {% for item in site.nav_items %}
+        {% assign active = false %}
+        {% if page.url == item.url %}
+          {% assign active = true %}
+        {% elsif item.url != '/' and page.url contains item.url %}
+          {% assign active = true %}
+        {% endif %}
+        <a href="{{ item.url | relative_url }}" class="nav-link{% if active %} active{% endif %}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
