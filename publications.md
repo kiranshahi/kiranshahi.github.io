@@ -1,55 +1,23 @@
 ---
 title: Publications
 permalink: /publications/
+description: "Publication and academic profiles of Kiran Shahi, including work on real-time video background replacement."
 ---
-
 # Publications
 
-This page lists selected publications, preprints, and ongoing research manuscripts. My work primarily focuses on medical imaging, computer vision, explainability, and applied AI systems.
+## Background Replacement in Video Conferencing
 
-## Selected Publications
+**Kiran Shahi**
+*International Journal of Network Dynamics and Intelligence*, 2023
 
-### Weakly Supervised Pneumonia Localization from Chest X-Rays Using Deep Neural Network and Grad-CAM Explanations
+This work investigates real-time human segmentation and background replacement for video conferencing using convolutional and recurrent deep-learning architectures, with attention to temporal consistency, visual quality, and efficient local inference.
 
-Kiran Shahi  
-Preprint / Research Manuscript
+[Project and implementation](https://github.com/kiranshahi/Real-time-Background-replacement-in-Video-Conferencing)
 
-This work investigates weakly supervised localization of pneumonia from chest X-rays using classification models and Grad-CAM-based visual explanations. The study examines whether disease-relevant regions can be identified using image-level labels alone, and discusses the role of explanation quality in weakly supervised medical imaging pipelines.
+## Academic profiles
 
-Links: PDF | arXiv | Code | Project Page
+For the authoritative and current record, visit:
 
-### Uncertainty-Aware Lung Segmentation for Chest X-Rays Using nnU-Net v2 Ensemble Analysis
-
-Kiran Shahi  
-Ongoing Research
-
-This project studies the reliability of automated lung segmentation using ensemble-based uncertainty estimation. It analyzes predictive entropy, ensemble variance, and the relationship between segmentation confidence and error regions under both in-distribution and out-of-distribution evaluation.
-
-Links: Preprint | Code | Figures
-
-### Temporal Matting with Explainable Confidence Maps
-
-Kiran Shahi  
-Proposed Research Direction
-
-This line of work explores temporal video matting with a focus on confidence-aware predictions, temporal consistency, and interpretable uncertainty visualization for human-centered editing systems.
-
-Links: Research Note | Concept Page
-
-## Research Themes
-
-My publication roadmap currently centers on the following themes:
-
-- Weakly supervised medical image analysis
-- Explainable AI in healthcare
-- Uncertainty-aware segmentation
-- Temporal vision and video matting
-
-## Notes
-
-A more complete and regularly updated publication list will also be maintained through:
-
-- Google Scholar
-- ORCID
-- GitHub repositories
-- Preprint servers
+- [Google Scholar]({{ site.social.scholar }})
+- [ORCID]({{ site.social.orcid }})
+- [ResearchGate]({{ site.social.researchgate }})

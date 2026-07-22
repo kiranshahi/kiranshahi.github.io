@@ -1,28 +1,42 @@
 ---
 title: CV
 permalink: /cv/
-description: "Research profile and technical skills of Kiran Shahi, computer vision researcher and software engineer."
+description: "Professional profile of Kiran Shahi, software developer, AI engineer, and computer vision researcher in London."
 ---
-# Curriculum Vitae
+# Professional profile
 
-This page summarises my research profile and technical interests. For a current full CV, please [contact me]({{ '/contact/' | relative_url }}).
+## Current role
 
-## Profile
+**Software Developer, MBS Survey Software Ltd**
+2023-present &middot; Steyning, England
 
-Researcher and software engineer working in computer vision, medical imaging, explainable AI, and research software systems.
+Developing specialist engineering software and visual-analysis tools spanning C#/.NET, web applications, computer vision, 3D graphics, CAD integration, and applied AI.
 
-## Research areas
+## Previous experience
 
-- Computer vision and medical imaging
-- Explainable and weakly supervised learning
-- Uncertainty-aware AI
-- Video matting and temporal vision
-- Research software systems
+**Software Engineer, Braindigit IT Solution Pvt. Ltd.**
+2017-2021 &middot; Kathmandu, Nepal
 
-## Selected technical skills
+Software engineering across production applications, backend systems, data workflows, and team delivery.
 
-Python, PyTorch, computer vision, medical image analysis, TypeScript, Angular, C#, .NET, SQL Server, data visualisation, research writing, and reproducible software development.
+## Education
 
-## Research output
+**MSc Artificial Intelligence, Distinction**
+Brunel University London &middot; 2021-2022
 
-See my [publications]({{ '/publications/' | relative_url }}), [research]({{ '/research/' | relative_url }}), [Google Scholar]({{ site.social.scholar }}), and [ORCID]({{ site.social.orcid }}).
+Dissertation: Real-time background replacement in video conferencing.
+
+## Core skills
+
+- C#, .NET, Python, TypeScript and JavaScrip
+- Angular, SQL Server, application and API developmen
+- PyTorch, TensorFlow, OpenCV and deep learning
+- Computer vision, image processing and Edge AI
+- 3D visualisation, real-time rendering and CAD integration
+- Git, Visual Studio and VS Code
+
+## Research and profiles
+
+See my [publication record]({{ '/publications/' | relative_url }}), [GitHub]({{ site.social.github }}), [LinkedIn]({{ site.social.linkedin }}), [Google Scholar]({{ site.social.scholar }}), and [ORCID]({{ site.social.orcid }}).
+
+For a current full CV, please [contact me]({{ '/contact/' | relative_url }}).

@@ -1,32 +1,38 @@
 ---
 title: Projects
 permalink: /projects/
+description: "Selected software engineering, computer vision, machine learning, and data visualisation projects by Kiran Shahi."
 ---
+# Selected projects
 
-# Projects
+## Real-time background replacement in video conferencing
 
-This page highlights selected research and software projects. My projects are typically motivated by a combination of scientific curiosity, practical utility, and long-term research potential.
+A deep-learning system for human segmentation and real-time video background matting. The project explored convolutional and recurrent convolutional architectures, temporal consistency, visual quality, and local privacy-preserving inference.
 
-## 1. Weakly Supervised Pneumonia Localization
+[View repository](https://github.com/kiranshahi/Real-time-Background-replacement-in-Video-Conferencing)
 
-A medical imaging research project focused on detecting and localizing pneumonia-relevant regions from chest X-rays using only image-level supervision. The project investigates Grad-CAM-based interpretation, localization behavior, and the strengths and limitations of weak supervision in clinical imaging.
+## Life expectancy prediction
 
-**Focus areas:** weak supervision, X-ray analysis, explainability, localization
+A machine-learning project based on World Bank data, using feature engineering and principal component analysis with random-forest and neural-network models.
 
-## 2. Uncertainty-Aware Lung Segmentation
+[View repository](https://github.com/kiranshahi/Life-expectancy-prediction)
 
-A segmentation project using nnU-Net v2 ensembles to study predictive confidence and model reliability in chest X-ray lung segmentation. The project emphasizes not only segmentation accuracy, but also calibration, uncertainty quantification, and robustness under dataset shift.
+## Employee Management System
 
-**Focus areas:** segmentation, uncertainty estimation, ensemble learning, clinical reliability
+A C# desktop application for managing employee records. This established open-source project reflects my earlier .NET application-development work.
 
-## 3. Temporal Video Matting Research
+[View repository](https://github.com/kiranshahi/Employee-Management-System)
 
-An ongoing research direction exploring temporal consistency, edge fidelity, and efficient modeling for video matting. The aim is to build systems that are accurate, lightweight, and capable of handling challenging temporal variations.
+## Restaurant Point of Sale System
 
-**Focus areas:** video matting, temporal learning, real-time vision, visual quality
+A C# point-of-sale and restaurant-management application covering menu management, billing, and common operational workflows.
 
-## 4. Research-Driven AI Software Systems
+[View repository](https://github.com/kiranshahi/Restaurant-Point-of-Sale-POS-System)
 
-Beyond individual research prototypes, I am interested in designing full-stack AI systems that connect model outputs with usable interfaces, reproducible workflows, and real-world deployment.
+## Impact of aid on poverty alleviation
 
-**Focus areas:** AI product engineering, research software, deployable systems
+An exploratory data-visualisation project using D3.js and Tableau to communicate development indicators and the relationship between aid and poverty.
+
+[View repository](https://github.com/kiranshahi/Impact-of-AID-on-Poverty-Alleviation)
+
+More experiments and open-source work are available on [GitHub]({{ site.social.github }}).
