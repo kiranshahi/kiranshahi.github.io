@@ -1,0 +1,52 @@
+---
+title: Sun Path Lab
+permalink: /lab/sun-path/
+description: "An interactive 3D sun-path visualisation by Kiran Shahi."
+---
+<section class="lab-intro">
+  <p class="eyebrow">Interactive experiment · Solar geometry</p>
+  <h1>Sun Path Lab</h1>
+  <p>Explore how latitude, season, and time affect the sun’s position above the horizon.</p>
+</section>
+
+<section class="sun-lab" aria-labelledby="sun-lab-title">
+  <div class="lab-toolbar">
+    <div>
+      <h2 id="sun-lab-title">Solar position</h2>
+      <p class="sun-reading" aria-live="polite">
+        <span>Altitude <strong id="sun-altitude">—</strong></span>
+        <span>Azimuth <strong id="sun-azimuth">—</strong></span>
+        <span id="sun-status">—</span>
+      </p>
+    </div>
+    <div class="lab-controls sun-controls">
+      <label>
+        <span>Latitude <output id="latitude-value">51.5° N</output></span>
+        <input id="sun-latitude" type="range" min="-65" max="70" step="0.1" value="51.5">
+      </label>
+      <label>
+        <span>Date</span>
+        <input id="sun-date" type="date">
+      </label>
+      <label>
+        <span>Solar time <output id="time-value">12:00</output></span>
+        <input id="sun-time" type="range" min="0" max="1440" step="5" value="720">
+      </label>
+      <button id="sun-today" type="button">Today</button>
+    </div>
+  </div>
+
+  <div class="sun-stage">
+    <canvas id="sun-path-canvas" role="img" aria-label="Three-dimensional horizon dome showing the daily path and current position of the sun"></canvas>
+    <p class="lab-hint">Drag to orbit · Scroll to zoom</p>
+  </div>
+</section>
+
+<section class="lab-notes">
+  <p class="kicker">Reading the model</p>
+  <h2>Season changes the arc</h2>
+  <p>The solar path is higher and longer in summer, and lower and shorter in winter. The visualisation uses latitude, solar declination, and hour angle to project the sun’s apparent daily movement onto a three-dimensional horizon dome.</p>
+  <a class="text-link" href="{{ '/lab/point-cloud/' | relative_url }}">Open the Point Cloud Lab</a>
+</section>
+
+<script defer src="{{ '/assets/js/sun-path-lab.js' | relative_url }}"></script>

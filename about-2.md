@@ -25,4 +25,4 @@ Before joining MBS Survey Software, I worked as a software engineer at Braindigi
 - Explainable AI
 - Research-to-product development
 
-For current activity and code, see my [GitHub]({{ site.social.github }}) and [LinkedIn]({{ site.social.linkedin }}) profiles.
+For more detail, see my [professional profile]({{ '/cv/' | relative_url }}), [GitHub]({{ site.social.github }}), and [LinkedIn]({{ site.social.linkedin }}).
