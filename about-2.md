@@ -1,6 +1,7 @@
 ---
 title: About
-permalink: /about2/
+permalink: /about/
+description: "About Kiran Shahi, a London-based computer vision researcher and software engineer working in medical imaging and explainable AI."
 ---
 
 # About

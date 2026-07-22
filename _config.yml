@@ -2,7 +2,7 @@ title: Kiran Shahi
 email: kiran.shahi@ieee.org
 url: "https://kirans.me"
 baseurl: ""
-description: "Personal academic website of Kiran Shahi, featuring research in artificial intelligence, computer vision, medical imaging, explainable AI, and research-driven software systems."
+description: "Kiran Shahi is a computer vision researcher and software engineer in London working on medical imaging, explainable AI, and research software."
 lang: en
 
 theme: null
@@ -60,7 +60,7 @@ author:
   title: AI Researcher | Computer Vision Engineer | Applied AI for Medical Imaging and Sustainable Systems
   affiliation: AI Researcher | Computer Vision | Medical Imaging | Sustainable AI Systems
   tagline: Building research-driven AI systems for healthcare, vision, and engineering applications.
-  photo: https://avatars.githubusercontent.com/u/15968059?v=4
+  photo: /assets/images/kiran-shahi.JPG
   email: kiran.shahi@ieee.org
 
 social:
@@ -70,7 +70,6 @@ social:
   linkedin: https://www.linkedin.com/in/kiranshahi
   researchgate: https://www.researchgate.net/profile/Kiran-Shahi
 
-cv_file: /assets/files/aarya-sharma-cv.pdf
 
 exclude:
   - vendor
