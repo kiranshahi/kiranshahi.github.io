@@ -1,26 +1,23 @@
 <footer class="site-footer" id="site-footer">
   <div class="container footer-main">
-    <div>
+    <div class="footer-brand">
       <p><strong>Kiran Shahi</strong></p>
       <p>AI Researcher | Computer Vision | Medical Imaging | Sustainable AI Systems</p>
       <p>© 2026 Kiran Shahi. All rights reserved.</p>
     </div>
+
+    <nav class="footer-links" aria-label="Footer links">
+      {% for item in site.nav_items limit: 6 %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+
     <div class="footer-social" aria-label="Social links">
-      <a href="{{ site.social.github }}" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.42-4.04-1.42-.55-1.37-1.33-1.73-1.33-1.73-1.09-.74.08-.73.08-.73 1.2.08 1.83 1.22 1.83 1.22 1.08 1.82 2.83 1.3 3.52.99.11-.76.42-1.3.76-1.6-2.67-.3-5.48-1.32-5.48-5.88 0-1.3.47-2.36 1.24-3.19-.12-.3-.54-1.53.12-3.18 0 0 1.02-.32 3.34 1.22a11.7 11.7 0 0 1 6.08 0c2.32-1.54 3.34-1.22 3.34-1.22.67 1.65.25 2.88.12 3.18.77.83 1.24 1.89 1.24 3.19 0 4.57-2.82 5.57-5.5 5.87.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.82.58A12 12 0 0 0 12 .5z"/></svg>
-      </a>
-      <a href="{{ site.social.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 14-7-3.82V17l7 4 7-4v-3.82L12 17z"/></svg>
-      </a>
-      <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.42v6.32zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-      </a>
-      <a href="{{ site.social.researchgate }}" target="_blank" rel="noopener" aria-label="ResearchGate">
-      <svg xmlns="http://www.w3.org/2000/svg" aria-label="Research Gate" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="512" height="512" rx="15%" fill="#00d0af"></rect> <g fill="#feffff"> <path d="m271 383c-15-4-23-10-36-26-9-12-26-39-35-53l-6-11h-24l0 34c1 43 0 42 19 45l10 1 0 4 0 4h-80l0-4c0-4 1-4 9-6 10-2 14-5 15-14 1-4 1-31 1-79-0-70-1-72-3-77-3-5-7-7-18-8-4-1-5-1-5-5v-4l43-1c55-1 65 0 81 11 15 10 22 24 20 43-1 21-17 42-37 50-4 1-7 3-7 3 0 2 17 28 28 43 15 21 27 32 36 37 4 2 9 3 10 3 3 0 3 1 3 4 0 3-1 5-2 5-5 2-19 2-26 0zm-57-109c14-7 22-18 23-35 1-13-2-22-10-30-9-10-25-14-48-12l-10 1v39c0 36 0 40 2 40 1 0 9 1 18 0 14-0 17-1 24-4z"></path> <path d="m321 228c-25-4-34-20-32-61 1-21 3-30 11-38 7-7 13-9 25-10 13-1 21 2 29 8 5 4 9 10 9 13 0 1-3 2-6 4l-6 3-3-3c-5-6-9-9-14-11-10-3-20 2-25 11-3 5-3 6-3 29 0 22 0 25 3 29 4 7 12 11 21 10 13-1 20-10 20-24v-7l-10-0-10-0v-13h36l-0 15c-0 12-1 16-3 22-6 15-23 24-42 22z"></path> </g> </g></svg>
-      </a>
-      <a href="{{ site.social.orcid }}" target="_blank" rel="noopener" aria-label="ORCID">
-      <svg xmlns="http://www.w3.org/2000/svg" aria-label="Orcid" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#ffffff"></rect><circle cx="256" cy="256" r="256" fill="#a6ce39"></circle><path d="m173 372h-31v-214h31zm45-214h83c79 0 114 57 114 107 0 55-43 107-114 107h-84zm31 187h49c70 0 86-53 86-79 0-43-27-79-87-79h-47zm-71-231c0 11-9 20-20 20s-20-9-20-20a20 20 0 0 1 20-20c11 0 20 9 20 20z" fill="#ffffff"></path></g></svg>
-      </a>
+      <a href="{{ site.social.github }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="{{ site.social.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="{{ site.social.researchgate }}" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+      <a href="{{ site.social.orcid }}" target="_blank" rel="noopener" aria-label="ORCID"><i class="fas fa-id-badge"></i></a>
     </div>
   </div>
 </footer>

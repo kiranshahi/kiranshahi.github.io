@@ -1,24 +1,24 @@
-- title: "Explainable Multi-Scale Vision Transformers for Early Lung Pathology Detection"
-  authors: "Aarya Sharma, Lina Zhou, Priyank Desai"
-  venue: "IEEE Transactions on Medical Imaging"
-  year: 2025
+- title: "Background replacement in video conferencing"
+  authors: "Kiran Shahi, Yongmin Li"
+  venue: "International Journal of Network Dynamics and Intelligence"
+  year: 2023
   tags: [medical-imaging, xai, transformers]
   links:
-    pdf: "#"
+    pdf: "https://media.sciltp.com/articles/sciltp/257/pdf/6597b4c418b50.pdf"
     arxiv: "#"
-    doi: "#"
-    code: "#"
-  abstract: "We introduce an explainable transformer pipeline that fuses multi-scale CT representations and produces clinically meaningful rationales."
+    doi: "https://doi.org/10.53941/ijndi.2023.100004"
+    code: "https://github.com/kiranshahi/Real-time-Background-replacement-in-Video-Conferencing"
+  abstract: ""
 
-- title: "Robust Video Matting for Dynamic Clinical Environments"
-  authors: "Aarya Sharma, Miguel Ortiz"
-  venue: "CVPR Workshops"
-  year: 2024
+- title: "Weakly Supervised Pneumonia Localization from Chest X-Rays Using Deep Neural Network and Grad-CAM Explanations"
+  authors: "Kiran Shahi, Anup Bagale"
+  venue: "Journal of Artificial Intelligence and Autonomous Intelligence"
+  year: 2025
   tags: [computer-vision, video-matting]
   links:
-    pdf: "#"
-    arxiv: "#"
-    doi: "#"
-    code: "#"
-  abstract: "A fast and reliable video matting approach for low-light and motion-heavy clinical scene analysis."
+    pdf: "https://arxiv.org/pdf/2511.00456"
+    arxiv: "https://arxiv.org/abs/2511.00456"
+    doi: "https://doi.org/10.54364/JAIAI.2024.1126"
+    code: "https://github.com/kiranshahi/pneumonia-analysis"
+  abstract: ""
 

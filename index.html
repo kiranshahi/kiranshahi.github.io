@@ -3,67 +3,148 @@ title: Home
 permalink: /
 layout: default
 ---
-<section class="hero">
-  <div>
-    <h1>Kiran Shahi</h1>
-    <h3>AI Researcher | Computer Vision Engineer | Applied AI for Medical Imaging and Research Software</h3>
-    <p>I build research-driven AI systems at the intersection of computer vision, medical imaging, explainable AI, and engineering software. My work combines scientific research with real-world product development, with a focus on trustworthy AI, visual intelligence, and deployable tools for healthcare applications.</p>
-    <div class="btn-row">
-      <a class="btn primary" href="{{ '/publications/' | relative_url }}">View Publications</a>
-      <a class="btn" href="{{ '/projects/' | relative_url }}">Explore Projects</a>
-      <a class="btn" href="{{ '/cv/' | relative_url }}">Download CV</a>
-      <a class="btn" href="{{ '/contact/' | relative_url }}">Contact</a>
+
+<section class="portfolio-hero">
+  <div class="portfolio-hero__content">
+    <span class="eyebrow"><i class="fas fa-sparkles" aria-hidden="true"></i>AI Researcher · Vision Engineer</span>
+
+    <h1>Building AI Systems That See, Understand and <span>Make an Impact</span></h1>
+
+    <p class="portfolio-hero__lead">
+      I build research-driven AI systems at the intersection of computer vision,
+      medical imaging, explainable AI, and engineering software. My work combines
+      scientific research with real-world product development, with a focus on
+      trustworthy AI, visual intelligence, and deployable tools for healthcare applications.
+    </p>
+
+    <div class="portfolio-hero__actions">
+      <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">
+        View Publications <i class="fas fa-book-open" aria-hidden="true"></i>
+      </a>
+      <a class="btn btn--secondary" href="{{ '/projects/' | relative_url }}">
+        Explore Projects <i class="fas fa-cube" aria-hidden="true"></i>
+      </a>
+      <a class="btn btn--secondary" href="{{ '/cv/' | relative_url }}">
+        <i class="fas fa-download" aria-hidden="true"></i> Download CV
+      </a>
+    </div>
+
+    <div class="portfolio-hero__meta">
+      <span><i class="far fa-envelope" aria-hidden="true"></i> {{ site.author.email | default: " " }}</span>
+      <span><i class="fas fa-location-dot" aria-hidden="true"></i> London, UK</span>
     </div>
   </div>
-  <div class="card">
-    <img src="{{ site.author.photo }}" alt="Portrait of Kiran Shahi">
+
+  <div class="portfolio-hero__visual">
+    <div class="portrait-card">
+      <img src="{{ site.author.photo }}" alt="Portrait of Kiran Shahi">
+    </div>
   </div>
 </section>
 
-<section class="section card">
-  <h2>Welcome</h2>
-  <p>Welcome to my academic website. I am a researcher and software engineer interested in developing practical and scientifically grounded AI systems. My work spans medical image analysis, explainable deep learning, video and visual understanding, and applied AI tools for engineering applications.</p>
-  <p>I am particularly interested in research that bridges theory and deployment: building systems that are not only accurate, but also interpretable, useful, and scalable in real-world environments.</p>
-</section>
+<section class="research-areas">
+  <div class="section-heading section-heading--center">
+    <h2>Research Areas</h2>
+    <span aria-hidden="true"></span>
+    <p>Exploring key domains to advance AI for real-world impact.</p>
+  </div>
 
-<section class="section">
-  <h2>Featured Research Areas</h2>
-  <div class="grid-2">
-    <article class="card">
+  <div class="area-grid">
+    <article class="area-card">
+      <div class="area-icon area-icon--blue"><i class="fas fa-lungs" aria-hidden="true"></i></div>
       <h3>Medical Imaging AI</h3>
-      <p>Developing robust and interpretable methods for chest X-ray analysis, disease localization, segmentation, and uncertainty-aware clinical AI.</p>
+      <p>Robust and interpretable methods for X-ray analysis, disease localization, segmentation, and uncertainty-aware clinical AI.</p>
     </article>
-    <article class="card">
+
+    <article class="area-card">
+      <div class="area-icon area-icon--green"><i class="fas fa-eye" aria-hidden="true"></i></div>
       <h3>Computer Vision</h3>
-      <p>Exploring weak supervision, visual explanations, temporal modeling, and next-generation vision systems for challenging real-world problems.</p>
+      <p>Weak supervision, visual explanations, temporal modeling, and next-generation vision systems for complex problems.</p>
     </article>
-    <article class="card">
+
+    <article class="area-card">
+      <div class="area-icon area-icon--purple"><i class="fas fa-brain" aria-hidden="true"></i></div>
       <h3>Explainable AI</h3>
-      <p>Studying how model decisions can be interpreted and trusted, especially in high-stakes domains such as healthcare.</p>
+      <p>Interpretable and trustworthy AI models, especially in high-stakes domains such as healthcare.</p>
     </article>
-    <article class="card">
+
+    <article class="area-card">
+      <div class="area-icon area-icon--orange"><i class="fas fa-code" aria-hidden="true"></i></div>
       <h3>Research Software Systems</h3>
-      <p>Designing practical AI software systems that connect experiments, model outputs, and deployable workflows.</p>
+      <p>Practical AI software that connects experiments, model outputs, and deployable workflows.</p>
     </article>
   </div>
 </section>
 
-<section class="section card">
-  <h2>Featured Projects Preview</h2>
-  <ul>
-    <li>Weakly Supervised Pneumonia Localization from Chest X-Rays</li>
-    <li>Uncertainty-Aware Lung Segmentation</li>
-    <li>Research-Driven AI Software Systems</li>
-    <li>Temporal Video Matting Research</li>
-  </ul>
+{% include featured-research.html %}
+
+<section class="profile-section">
+  <article class="about-card">
+    <div class="card-title">
+      <h2>About Me</h2>
+      <span aria-hidden="true"></span>
+    </div>
+
+    <p>
+      I am a researcher and software engineer working in artificial intelligence,
+      computer vision, medical imaging, explainable AI, and research software systems.
+    </p>
+    <p>
+      My work focuses on building trustworthy and deployable AI systems that connect
+      scientific research with practical impact.
+    </p>
+
+    <div class="about-facts">
+      <div>
+        <i class="fas fa-layer-group" aria-hidden="true"></i>
+        <strong>Research Focus</strong>
+        <span>AI · CV · Medical Imaging · XAI</span>
+      </div>
+      <div>
+        <i class="fas fa-flask" aria-hidden="true"></i>
+        <strong>Experience</strong>
+        <span>Researcher & Engineer</span>
+      </div>
+      <div>
+        <i class="fas fa-location-dot" aria-hidden="true"></i>
+        <strong>Location</strong>
+        <span>London, UK</span>
+      </div>
+      <div>
+        <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+        <strong>Interests</strong>
+        <span>Deep Learning, Vision, Healthcare AI</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="quick-bio-card">
+    <div class="card-title">
+      <h2>Quick Bio</h2>
+      <span aria-hidden="true"></span>
+    </div>
+
+    <ul>
+      <li><i class="fas fa-dharmachakra" aria-hidden="true"></i> Passionate about solving real-world problems with AI.</li>
+      <li><i class="fas fa-cube" aria-hidden="true"></i> Bridging theory and deployment for impactful solutions.</li>
+      <li><i class="fas fa-shield-heart" aria-hidden="true"></i> Open to research collaborations and interdisciplinary projects.</li>
+      <li><i class="fas fa-feather" aria-hidden="true"></i> Always learning and exploring new ideas.</li>
+    </ul>
+  </article>
 </section>
 
-<section class="section card">
-  <h2>Quick Bio</h2>
-  <p>Kiran Shahi is a researcher and software engineer working in artificial intelligence, computer vision, medical imaging, explainable AI, and research software systems. His work focuses on building trustworthy and deployable AI systems that connect scientific research with practical impact.</p>
-</section>
+<section class="closing-statement">
+  <div class="quote-mark"><i class="fas fa-quote-right" aria-hidden="true"></i></div>
 
-<section class="section card">
-  <h2>Closing Statement</h2>
-  <p>I am always interested in research collaborations, interdisciplinary projects, and opportunities that combine scientific rigor, software engineering, and real-world impact.</p>
+  <div>
+    <h2>Closing Statement</h2>
+    <p>
+      I am always interested in research collaborations, interdisciplinary projects,
+      and opportunities that combine scientific rigor, software engineering, and real-world impact.
+    </p>
+  </div>
+
+  <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">
+    Let's Connect <i class="fas fa-arrow-right" aria-hidden="true"></i>
+  </a>
 </section>
