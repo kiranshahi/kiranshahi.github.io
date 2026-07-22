@@ -1,32 +1,20 @@
 ---
 title: Contact
 permalink: /contact/
+description: "Contact Kiran Shahi about computer vision research, medical imaging, explainable AI, or software engineering collaboration."
 ---
-
 # Contact
 
-Thank you for visiting my website.
-
-I welcome conversations related to:
-
-- Research collaboration
-- Academic networking
-- Open-source projects
-- Computer vision and medical imaging
-- Explainable AI
+I welcome conversations about research collaboration, computer vision, medical imaging, explainable AI, open-source projects, and research software.
 
 ## Email
 
-your-email@example.com
+[kiran.shahi@ieee.org](mailto:kiran.shahi@ieee.org)
 
-## Academic Profiles
+## Academic profiles
 
-- Google Scholar
-- ORCID
-- GitHub
-- LinkedIn
-- ResearchGate
-
-## Collaboration Note
-
-I am particularly interested in interdisciplinary collaborations that connect AI research, scientific rigor, and practical systems. If your work aligns with computer vision, medical imaging, explainable AI, or applied AI software applications, I would be glad to connect.
+- [Google Scholar]({{ site.social.scholar }})
+- [ORCID]({{ site.social.orcid }})
+- [GitHub]({{ site.social.github }})
+- [LinkedIn]({{ site.social.linkedin }})
+- [ResearchGate]({{ site.social.researchgate }})

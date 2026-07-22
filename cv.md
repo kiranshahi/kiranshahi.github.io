@@ -1,79 +1,28 @@
 ---
 title: CV
 permalink: /cv/
+description: "Research profile and technical skills of Kiran Shahi, computer vision researcher and software engineer."
 ---
-
 # Curriculum Vitae
 
-A full academic CV is available for download below.
+This page summarises my research profile and technical interests. For a current full CV, please [contact me]({{ '/contact/' | relative_url }}).
 
-<a class="btn primary" href="{{ site.cv_file | relative_url }}" download>Download CV</a>
+## Profile
 
-## Profile Summary
+Researcher and software engineer working in computer vision, medical imaging, explainable AI, and research software systems.
 
-Researcher and software engineer with interests in artificial intelligence, computer vision, medical imaging, explainable AI, and research software systems. Experienced in both research-oriented development and production-focused software engineering.
+## Research areas
 
-## Research Areas
+- Computer vision and medical imaging
+- Explainable and weakly supervised learning
+- Uncertainty-aware AI
+- Video matting and temporal vision
+- Research software systems
 
-- Computer Vision
-- Medical Imaging
-- Explainable AI
-- Weakly Supervised Learning
-- Uncertainty-Aware AI
-- Video Matting
-- Research Software Systems
+## Selected technical skills
 
-## Education
+Python, PyTorch, computer vision, medical image analysis, TypeScript, Angular, C#, .NET, SQL Server, data visualisation, research writing, and reproducible software development.
 
-**[Add your degree here]**  
-University / Institution  
-Year - Year
+## Research output
 
-**[Add further education here]**
-
-## Experience
-
-**Software Engineer / Research-Oriented Developer**  
-[Organization Name]  
-[Year - Present]
-
-Working on engineering software systems, AI-enabled tools, full-stack development, and domain-specific analytical platforms.
-
-## Selected Technical Skills
-
-- Python
-- PyTorch
-- Computer Vision
-- Medical Imaging Analysis
-- TypeScript
-- Angular
-- C#
-- .NET
-- SQL Server
-- Jekyll / GitHub Pages
-- Research Writing
-- Data Visualization
-
-## Research Output
-
-- Preprints
-- Ongoing manuscripts
-- Research software tools
-- Technical documentation
-- Open-source repositories
-
-## Academic Activities
-
-- Independent research
-- Technical writing
-- Scientific figure design
-- Research software prototyping
-- Interdisciplinary project development
-
-## Awards / Recognition
-
-Add scholarships, awards, distinctions, invited talks, or recognition here.
-
-## Reviewer / Academic Service
-
-Add reviewing roles, editorial activities, conference service, or professional memberships here.
+See my [publications]({{ '/publications/' | relative_url }}), [research]({{ '/research/' | relative_url }}), [Google Scholar]({{ site.social.scholar }}), and [ORCID]({{ site.social.orcid }}).
