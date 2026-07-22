@@ -34,3 +34,5 @@ I am interested in temporal consistency, edge fidelity, and memory mechanisms fo
 ## Research Statement
 
 My research aims to build AI systems that are not only accurate, but also interpretable, robust, and usable in real-world settings. I am especially interested in domains where trust matters, such as healthcare. Across my projects, I try to combine principled methodology, strong evaluation, and practical deployment thinking so that the resulting work contributes both to science and to real applications.
+
+[View publications and academic profiles]({{ '/publications/' | relative_url }})

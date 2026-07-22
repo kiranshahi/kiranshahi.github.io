@@ -5,6 +5,18 @@ description: "Selected software engineering, computer vision, machine learning, 
 ---
 # Selected projects
 
+## 3D Point Cloud Lab
+
+A browser-native visual-computing experiment for exploring sampling, perspective projection, depth, and camera movement through an interactive procedural surface.
+
+[Open the interactive lab]({{ '/lab/point-cloud/' | relative_url }})
+
+## Sun Path Lab
+
+An interactive solar-geometry visualisation showing how latitude, date, and time affect the sun’s daily arc, altitude, and azimuth.
+
+[Open the Sun Path Lab]({{ '/lab/sun-path/' | relative_url }})
+
 ## Real-time background replacement in video conferencing
 
 A deep-learning system for human segmentation and real-time video background matting. The project explored convolutional and recurrent convolutional architectures, temporal consistency, visual quality, and local privacy-preserving inference.

@@ -54,20 +54,3 @@ function updateHeader() {
 updateThemeLabel();
 updateHeader();
 addEventListener("scroll", updateHeader, { passive: true });
-
-const revealTargets = document.querySelectorAll(
-  ".hero > *, .section-head, .interest-grid article, .split-section > *, .contact-strip, main.container > h1, main.container > h2, main.container > h3"
-);
-
-if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  revealTargets.forEach(target => target.classList.add("reveal"));
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: .08, rootMargin: "0px 0px -24px" });
-  revealTargets.forEach(target => observer.observe(target));
-}

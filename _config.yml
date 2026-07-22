@@ -38,19 +38,15 @@ defaults:
       section: projects
 
 nav_items:
-  - title: Home
-    url: /
   - title: About
     url: /about/
   - title: Research
     url: /research/
-  - title: Publications
-    url: /publications/
-  - title: Projects
+  - title: Work
     url: /projects/
-  - title: CV
-    url: /cv/
-  - title: News
+  - title: Labs
+    url: /labs/
+  - title: Notes
     url: /news/
   - title: Contact
     url: /contact/

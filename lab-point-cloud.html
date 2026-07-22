@@ -1,0 +1,53 @@
+---
+title: 3D Point Cloud Lab
+permalink: /lab/point-cloud/
+description: "An interactive 3D point-cloud experiment by Kiran Shahi."
+---
+<section class="lab-intro">
+  <p class="eyebrow">Interactive experiment · Visual computing</p>
+  <h1>3D Point Cloud Lab</h1>
+  <p>Explore how a sampled surface changes with density, depth, projection, and viewpoint. Drag to orbit, scroll to zoom, or use the keyboard controls.</p>
+</section>
+
+<section class="point-lab" aria-labelledby="point-lab-title">
+  <div class="lab-toolbar">
+    <h2 id="point-lab-title">Surface explorer</h2>
+    <div class="lab-controls">
+      <label>
+        <span>View</span>
+        <select id="lab-mode">
+          <option value="points">Point cloud</option>
+          <option value="mesh">Wireframe</option>
+          <option value="both">Combined</option>
+        </select>
+      </label>
+      <label>
+        <span>Density <output id="density-value">24</output></span>
+        <input id="lab-density" type="range" min="10" max="42" value="24">
+      </label>
+      <label>
+        <span>Depth <output id="depth-value">1.0</output></span>
+        <input id="lab-depth" type="range" min="0" max="180" value="100">
+      </label>
+      <label class="lab-check">
+        <input id="lab-rotate" type="checkbox" checked>
+        <span>Auto rotate</span>
+      </label>
+      <button id="lab-reset" type="button">Reset view</button>
+    </div>
+  </div>
+
+  <div class="lab-stage">
+    <canvas id="point-cloud-canvas" tabindex="0" role="img" aria-label="Interactive three-dimensional wave surface rendered as a point cloud"></canvas>
+    <p class="lab-hint">Drag to orbit · Scroll to zoom · Arrow keys to rotate · +/− to zoom</p>
+  </div>
+</section>
+
+<section class="lab-notes">
+  <p class="kicker">What this demonstrates</p>
+  <h2>Projection without a 3D framework</h2>
+  <p>The scene is generated procedurally and projected onto a two-dimensional canvas in real time. It demonstrates sampling, rotation matrices, perspective projection, depth sorting, and interaction handling using browser-native JavaScript.</p>
+  <a class="text-link" href="{{ '/projects/' | relative_url }}">Explore more work</a>
+</section>
+
+<script defer src="{{ '/assets/js/point-cloud-lab.js' | relative_url }}"></script>
