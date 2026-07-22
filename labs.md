@@ -10,7 +10,7 @@ Small browser-based experiments exploring three-dimensional graphics, geometry, 
 
 ## 3D Point Cloud Lab
 
-Orbit a procedural surface and explore how sampling density, depth, projection, and rendering mode affect its appearance.
+Orbit a stylised point-cloud interpretation of The Shard and explore how sampling density, height, projection, and rendering mode affect its appearance.
 
 [Open the Point Cloud Lab]({{ '/lab/point-cloud/' | relative_url }})
 

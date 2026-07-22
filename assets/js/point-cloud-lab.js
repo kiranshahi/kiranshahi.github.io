@@ -15,7 +15,7 @@
   let width = 0;
   let height = 0;
   let pixelRatio = 1;
-  let rotationX = -0.68;
+  let rotationX = -0.18;
   let rotationY = -0.55;
   let zoom = 1;
   let dragging = false;
@@ -39,29 +39,108 @@
     context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
   }
 
-  function makePoint(x, z, amplitude) {
-    const distance = Math.sqrt(x * x + z * z);
-    const y = Math.sin(distance * 2.35) * Math.exp(-distance * 0.2) * amplitude
-      + Math.cos(x * 1.25) * Math.sin(z * 1.1) * amplitude * 0.22;
-
+  function projectPoint(point) {
     const cosY = Math.cos(rotationY);
     const sinY = Math.sin(rotationY);
-    const x1 = x * cosY - z * sinY;
-    const z1 = x * sinY + z * cosY;
+    const x1 = point.x * cosY - point.z * sinY;
+    const z1 = point.x * sinY + point.z * cosY;
     const cosX = Math.cos(rotationX);
     const sinX = Math.sin(rotationX);
-    const y2 = y * cosX - z1 * sinX;
-    const z2 = y * sinX + z1 * cosX;
-    const camera = 8.8;
+    const y2 = point.y * cosX - z1 * sinX;
+    const z2 = point.y * sinX + z1 * cosX;
+    const camera = 10;
     const perspective = camera / (camera + z2);
-    const scale = Math.min(width, height) * 0.105 * zoom;
-
+    const scale = Math.min(width, height) * 0.108 * zoom;
     return {
       x: width / 2 + x1 * scale * perspective,
-      y: height / 2 + y2 * scale * perspective,
+      y: height * 0.54 - y2 * scale * perspective,
       z: z2,
-      perspective
+      perspective,
+      level: point.level
     };
+  }
+
+  function buildShard() {
+    const detail = Number(density.value);
+    const heightScale = Number(depth.value) / 100;
+    const levels = detail * 2;
+    const segments = Math.max(2, Math.round(detail / 7));
+    const caps = [1, .93, .84, .76, .96, .88, .79, .9];
+    const points = [];
+    const rings = [];
+    const columns = Array.from({ length: 8 * segments }, () => []);
+
+    for (let level = 0; level <= levels; level += 1) {
+      const t = level / levels;
+      const taper = Math.pow(Math.max(0, 1 - t), 1.08);
+      const y = (-3.45 + t * 7.25) * heightScale;
+      const ring = [];
+
+      for (let side = 0; side < 8; side += 1) {
+        const next = (side + 1) % 8;
+        for (let segment = 0; segment < segments; segment += 1) {
+          const u = segment / segments;
+          const cap = caps[side] * (1 - u) + caps[next] * u;
+          if (t > cap) {
+            ring.push(null);
+            continue;
+          }
+
+          const angleA = side / 8 * Math.PI * 2 + Math.PI / 8;
+          const angleB = (side + 1) / 8 * Math.PI * 2 + Math.PI / 8;
+          const baseA = { x: Math.cos(angleA) * 1.32, z: Math.sin(angleA) * .88 };
+          const baseB = { x: Math.cos(angleB) * 1.32, z: Math.sin(angleB) * .88 };
+          const setback = .18 * Math.sin(Math.PI * Math.min(1, t / .16));
+          const profile = taper + setback * (1 - t);
+          const point = {
+            x: (baseA.x * (1 - u) + baseB.x * u) * profile,
+            y,
+            z: (baseA.z * (1 - u) + baseB.z * u) * profile,
+            level
+          };
+          points.push(point);
+          ring.push(point);
+          columns[side * segments + segment].push(point);
+        }
+      }
+      if (!ring.includes(null) && ring.length) ring.push(ring[0]);
+      rings.push(ring);
+    }
+    return { points, rings, columns };
+  }
+
+  function strokeWorldLine(points, colour, lineWidth) {
+    let drawing = false;
+    context.beginPath();
+    for (const point of points) {
+      if (!point) {
+        drawing = false;
+        continue;
+      }
+      const projected = projectPoint(point);
+      if (drawing) context.lineTo(projected.x, projected.y);
+      else {
+        context.moveTo(projected.x, projected.y);
+        drawing = true;
+      }
+    }
+    context.strokeStyle = colour;
+    context.lineWidth = lineWidth;
+    context.stroke();
+  }
+
+  function drawGround(colour) {
+    const baseY = -3.47 * Number(depth.value) / 100;
+    for (let index = -4; index <= 4; index += 1) {
+      strokeWorldLine([
+        { x: index * .6, y: baseY, z: -2.4 },
+        { x: index * .6, y: baseY, z: 2.4 }
+      ], colour, .6);
+      strokeWorldLine([
+        { x: -2.4, y: baseY, z: index * .6 },
+        { x: 2.4, y: baseY, z: index * .6 }
+      ], colour, .6);
+    }
   }
 
   function draw() {
@@ -71,57 +150,29 @@
       accent: readColour("--accent", "#126b55"),
       text: readColour("--muted", "#65706b")
     };
+    const geometry = buildShard();
 
     context.clearRect(0, 0, width, height);
     context.fillStyle = styles.background;
     context.fillRect(0, 0, width, height);
-
-    const count = Number(density.value);
-    const amplitude = Number(depth.value) / 100;
-    const extent = 3.35;
-    const points = [];
-    const grid = [];
-
-    for (let row = 0; row < count; row += 1) {
-      const line = [];
-      const z = -extent + (row / (count - 1)) * extent * 2;
-      for (let column = 0; column < count; column += 1) {
-        const x = -extent + (column / (count - 1)) * extent * 2;
-        const point = makePoint(x, z, amplitude);
-        point.row = row;
-        point.column = column;
-        points.push(point);
-        line.push(point);
-      }
-      grid.push(line);
-    }
+    drawGround(styles.line);
 
     if (mode.value === "mesh" || mode.value === "both") {
-      context.strokeStyle = styles.line;
-      context.lineWidth = 0.8;
-      for (let row = 0; row < count; row += 1) {
-        context.beginPath();
-        grid[row].forEach((point, index) => index ? context.lineTo(point.x, point.y) : context.moveTo(point.x, point.y));
-        context.stroke();
-      }
-      for (let column = 0; column < count; column += 1) {
-        context.beginPath();
-        for (let row = 0; row < count; row += 1) {
-          const point = grid[row][column];
-          row ? context.lineTo(point.x, point.y) : context.moveTo(point.x, point.y);
-        }
-        context.stroke();
-      }
+      geometry.rings.forEach((ring, index) => {
+        if (index % 2 === 0) strokeWorldLine(ring, styles.line, .7);
+      });
+      geometry.columns.forEach(column => strokeWorldLine(column, styles.line, .75));
     }
 
     if (mode.value === "points" || mode.value === "both") {
-      points.sort((a, b) => b.z - a.z);
-      for (const point of points) {
-        const depthMix = Math.max(0.2, Math.min(1, point.perspective));
-        context.globalAlpha = 0.38 + depthMix * 0.62;
+      const projected = geometry.points.map(projectPoint);
+      projected.sort((a, b) => b.z - a.z);
+      for (const point of projected) {
+        const heightMix = point.level / (Number(density.value) * 2);
+        context.globalAlpha = .46 + heightMix * .5;
         context.fillStyle = styles.accent;
         context.beginPath();
-        context.arc(point.x, point.y, Math.max(1, 1.65 * point.perspective), 0, Math.PI * 2);
+        context.arc(point.x, point.y, Math.max(.9, 1.6 * point.perspective), 0, Math.PI * 2);
         context.fill();
       }
       context.globalAlpha = 1;
@@ -129,7 +180,10 @@
 
     context.fillStyle = styles.text;
     context.font = "12px system-ui, sans-serif";
-    context.fillText(count * count + " samples", 18, height - 18);
+    context.textAlign = "left";
+    context.fillText(geometry.points.length + " architectural samples", 18, height - 18);
+    context.textAlign = "right";
+    context.fillText("London · procedural interpretation", width - 18, height - 18);
   }
 
   function animate(time) {
@@ -142,7 +196,7 @@
 
   function updateValues() {
     densityValue.value = density.value;
-    depthValue.value = (Number(depth.value) / 100).toFixed(1);
+    depthValue.value = depth.value + "%";
   }
 
   canvas.addEventListener("pointerdown", event => {
@@ -156,7 +210,7 @@
     if (!dragging) return;
     rotationY += (event.clientX - previousX) * 0.008;
     rotationX += (event.clientY - previousY) * 0.008;
-    rotationX = Math.max(-1.45, Math.min(1.45, rotationX));
+    rotationX = Math.max(-1.1, Math.min(0.35, rotationX));
     previousX = event.clientX;
     previousY = event.clientY;
   });
@@ -176,8 +230,8 @@
     const step = 0.09;
     if (event.key === "ArrowLeft") rotationY -= step;
     else if (event.key === "ArrowRight") rotationY += step;
-    else if (event.key === "ArrowUp") rotationX = Math.max(-1.45, rotationX - step);
-    else if (event.key === "ArrowDown") rotationX = Math.min(1.45, rotationX + step);
+    else if (event.key === "ArrowUp") rotationX = Math.max(-1.1, rotationX - step);
+    else if (event.key === "ArrowDown") rotationX = Math.min(0.35, rotationX + step);
     else if (event.key === "+" || event.key === "=") zoom = Math.min(2, zoom + 0.08);
     else if (event.key === "-") zoom = Math.max(0.58, zoom - 0.08);
     else return;
@@ -186,7 +240,7 @@
 
   [density, depth].forEach(control => control.addEventListener("input", updateValues));
   reset.addEventListener("click", () => {
-    rotationX = -0.68;
+    rotationX = -0.18;
     rotationY = -0.55;
     zoom = 1;
   });
