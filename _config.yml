@@ -2,7 +2,7 @@ title: Kiran Shahi
 email: kiran.shahi@ieee.org
 url: "https://kirans.me"
 baseurl: ""
-description: "Kiran Shahi is a computer vision researcher and software engineer in London working on medical imaging, explainable AI, and research software."
+description: "Kiran Shahi is a London-based software developer, AI engineer, and computer vision researcher working across production software, 3D graphics, and applied AI."
 lang: en
 
 theme: null
@@ -57,10 +57,9 @@ nav_items:
 
 author:
   name: Kiran Shahi
-  title: AI Researcher | Computer Vision Engineer | Applied AI for Medical Imaging and Sustainable Systems
-  affiliation: AI Researcher | Computer Vision | Medical Imaging | Sustainable AI Systems
-  tagline: Building research-driven AI systems for healthcare, vision, and engineering applications.
-  photo: /assets/images/kiran-shahi.JPG
+  title: Software Developer | AI Engineer | Computer Vision Researcher
+  affiliation: MBS Survey Software Ltd | London, United Kingdom
+  tagline: Turning complex algorithms into practical, production-ready software.
   email: kiran.shahi@ieee.org
 
 social:

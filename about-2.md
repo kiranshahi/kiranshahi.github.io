@@ -1,45 +1,28 @@
 ---
 title: About
 permalink: /about/
-description: "About Kiran Shahi, a London-based computer vision researcher and software engineer working in medical imaging and explainable AI."
+description: "About Kiran Shahi, a London-based software developer, AI engineer, and computer vision researcher."
 ---
-
 # About
 
-I am a researcher and software engineer working at the intersection of artificial intelligence, computer vision, medical imaging, and engineering software systems. My goal is to develop AI methods that are both scientifically meaningful and practically deployable.
+I am a London-based software developer, AI engineer, and computer vision researcher. At MBS Survey Software Ltd, I contribute to specialist software that brings together engineering workflows, computer vision, 3D graphics, artificial intelligence, and visual analysis.
 
-My work combines two complementary directions. The first is research in visual AI, particularly in medical imaging, explainability, segmentation, localization, and temporal vision problems. The second is applied software development, where I build engineering tools and intelligent platforms for real-world use cases such as research-oriented simulation and analysis systems.
+My work sits between research and product engineering. I enjoy taking an idea from algorithm and experiment through to a robust application: designing the system, testing its behaviour, improving performance, and building an interface that makes it useful.
 
-I am especially drawn to research questions that sit between disciplines: where physics-based reasoning, visual learning, uncertainty estimation, and system design come together. I believe some of the most valuable AI systems will emerge not from isolated models, but from careful integration of domain knowledge, trustworthy evaluation, and strong engineering.
+## Background
 
-My current interests include:
+I completed an MSc in Artificial Intelligence with Distinction at Brunel University London. My dissertation investigated real-time background replacement for video conferencing using convolutional and recurrent neural-network architectures. That work became a 2023 journal publication.
 
-- Computer vision
-- Medical imaging AI
+Before joining MBS Survey Software, I worked as a software engineer at Braindigit IT Solution in Nepal. Across my professional and open-source work, I have used C#, Python, TypeScript, .NET, Angular, SQL Server, OpenCV, PyTorch, TensorFlow, D3.js, and 3D/CAD technologies.
+
+## Areas of interest
+
+- Production software engineering
+- Computer vision and image processing
+- 3D graphics and real-time visualisation
+- Deep learning and Edge AI
+- Video matting and segmentation
 - Explainable AI
-- Weakly supervised learning
-- Uncertainty-aware segmentation
-- Video matting and temporal vision
-- Research software engineering
+- Research-to-product development
 
-In the long term, I aim to build a strong research profile through publications, open-source tools, and impactful interdisciplinary projects, while contributing to both academia and research-driven product development.
-
-## Research Vision
-
-My broader vision is to contribute to AI systems that are:
-
-- Trustworthy, especially in healthcare and safety-critical settings
-- Interpretable, so their behavior can be understood and improved
-- Scientifically grounded, not just benchmark-driven
-- Deployable, with clear pathways to product or societal impact
-
-I am particularly interested in research that can evolve into long-term platforms, open tools, and collaborations across academia and industry.
-
-## Open To
-
-- Research collaboration
-- Joint publications
-- Interdisciplinary AI projects
-- Research internships or visiting opportunities
-- Open-source collaboration
-- Academic networking
+For current activity and code, see my [GitHub]({{ site.social.github }}) and [LinkedIn]({{ site.social.linkedin }}) profiles.
