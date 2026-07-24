@@ -7,7 +7,7 @@ description: "Selected software engineering, computer vision, machine learning, 
 
 ## 3D Point Cloud Lab
 
-A browser-native visual-computing experiment for exploring sampling, perspective projection, depth, and camera movement through an interactive procedural surface.
+A browser-native architectural point-cloud experiment inspired by The Shard, exploring sampling density, perspective projection, and camera movement.
 
 [Open the interactive lab]({{ '/lab/point-cloud/' | relative_url }})
 
