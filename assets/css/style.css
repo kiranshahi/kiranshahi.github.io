@@ -449,3 +449,32 @@ main.container > :is(h1, h2, h3, p, ul, ol, blockquote, hr) {
   .sun-controls label, .sun-controls label:first-child, .sun-controls label:nth-child(2), .sun-controls label:nth-child(3) { grid-column: 1; }
   #sun-path-canvas { height: 420px; }
 }
+
+.tools-intro, .tool-showcase { width: min(100%, 1000px); margin-inline: auto; }
+.tools-intro { max-width: 760px; margin-bottom: clamp(2.5rem, 6vw, 4.5rem); margin-left: 0; }
+.tools-intro h1 { max-width: 720px; font-size: clamp(3rem, 7vw, 5.5rem); }
+.tools-intro > p:last-child { max-width: 620px; margin-bottom: 0; font-size: 1.06rem; }
+.tool-showcase { padding-top: clamp(1.5rem, 3vw, 2.5rem); border-top: 1px solid var(--line); }
+.tool-card { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-raised); transition: border-color .2s ease, transform .2s ease; }
+.tool-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.tool-card-preview { display: block; min-height: 100%; overflow: hidden; border-right: 1px solid var(--line); background: var(--soft); }
+.tool-card-preview img { width: 100%; height: 100%; min-height: 360px; object-fit: cover; object-position: center; transition: transform .35s ease; }
+.tool-card-preview:hover img { transform: scale(1.015); }
+.tool-card-content { display: flex; align-items: flex-start; flex-direction: column; justify-content: center; padding: clamp(1.5rem, 3.5vw, 2.75rem); }
+.tool-card h2 { margin: .35rem 0 1rem; font-size: clamp(1.8rem, 3.25vw, 2.7rem); }
+.tool-card p { margin: 0; }
+.tool-number { color: var(--accent) !important; font-size: .68rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.tool-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.35rem 0 0; padding: 0; list-style: none; }
+.tool-tags li { margin: 0 !important; padding: .25rem .6rem; border: 1px solid var(--line); border-radius: 999px; font-size: .7rem; }
+.tool-card-actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.75rem; }
+.tool-card-actions .button { gap: .5rem; }
+@media (max-width: 820px) {
+  .tool-card { grid-template-columns: 1fr; }
+  .tool-card-preview { aspect-ratio: 16 / 9; min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .tool-card-preview img { min-height: 0; }
+}
+@media (max-width: 520px) {
+  .tool-card-content { padding: 1.35rem; }
+  .tool-card-actions { width: 100%; }
+  .tool-card-actions .button { width: 100%; }
+}
