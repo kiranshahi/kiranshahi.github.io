@@ -1,61 +1,34 @@
 ---
+title: About
 permalink: /about/
-title: "About"
-layout: profile
-author_profile: true
-hero_title: "About Me"
-hero_tagline: "Software Engineer & AI Researcher"
-hero_actions:
-  - text: "View Research"
-    url: "/research/"
-  - text: "Contact"
-    url: "/contact/"
+layout: default
+description: "About Kiran Shahi, a London-based software engineer working across visual computing and applied AI."
 ---
 
-<nav class="page-nav">
-  <h2>On this page</h2>
-  <ul>
-    <li><a href="#background">Background</a></li>
-    <li><a href="#current-work">Current Work</a></li>
-    <li><a href="#interests">Interests</a></li>
-    <li><a href="#connect">Let's Collaborate</a></li>
-  </ul>
-</nav>
+<section class="about-intro">
+  <p class="kicker">About</p>
+  <h1>Engineering curiosity into dependable software.</h1>
+  <p>I am a London-based software engineer with a background spanning production application development, artificial intelligence, computer vision, and research.</p>
+</section>
 
-<div class="about-grid">
-
-<section id="background" class="bio-section">
-  <h2>Background</h2>
-  <p class="section-intro">From Pokhara to London—my path into software and AI.</p>
-  <div class="timeline">
-    <div class="timeline-item">
-      <span class="timeline-date">2017</span>
-      <p>Joined Braindigit as a software engineer after completing my BSc in Computing at Islington College, Kathmandu.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-date">2021</span>
-      <p>Moved to London for an MSc in Artificial Intelligence, exploring deep learning, neural networks, and computer vision.</p>
-    </div>
+<section class="about-story">
+  <div>
+    <p class="kicker">My approach</p>
+    <h2>I work between research and product engineering.</h2>
+  </div>
+  <div>
+    <p>I enjoy problems where software must make a complex idea understandable and useful. That might mean translating a computer-vision model into a responsive application, designing an interactive 3D visualisation, or building dependable tools for specialist industry workflows.</p>
+    <p>My approach combines careful experimentation with practical engineering: understand the problem, evaluate the trade-offs, and build something people can rely on.</p>
   </div>
 </section>
 
-<section id="current-work" class="bio-section">
-  <h2>Current Work</h2>
-  <p class="section-intro">Building tools that make survey data smarter.</p>
-  <p>Since January 2023 I've been a software engineer at MBS Survey Software Ltd, turning complex requirements into reliable products and constantly learning new technologies.</p>
+<section class="about-facts" aria-label="Professional background">
+  <article><p class="kicker">Now</p><h3>Software Engineer</h3><p>MBS Survey Software Ltd, building specialist production software in London.</p></article>
+  <article><p class="kicker">Education</p><h3>MSc Artificial Intelligence</h3><p>Graduated with Distinction after moving from Nepal to London to deepen my work in AI and computer vision.</p></article>
+  <article><p class="kicker">Beyond work</p><h3>Discipline and curiosity</h3><p>I am a first-degree Seido Karate black belt, fitness enthusiast, and lifelong learner.</p></article>
 </section>
 
-<section id="interests" class="bio-section">
-  <h2>Interests</h2>
-  <p class="section-intro">What keeps me curious and balanced.</p>
-  <p>I stay current with tech through blogs and side projects. Outside the screen, I'm a 1-degree Seido Karate black belt and fitness enthusiast, always open to new opportunities and collaborations.</p>
+<section class="contact-strip">
+  <div><p class="kicker">Connect</p><h2>Interested in engineering, applied AI, or research collaboration?</h2></div>
+  <a class="button primary" href="{{ '/contact/' | relative_url }}">Get in touch</a>
 </section>
-
-</div>
-
-<section id="connect" class="cta-card">
-  <h2>Let's Collaborate</h2>
-  <p>Have an idea or opportunity? I'm all ears.</p>
-  <a href="/contact/" class="btn btn--primary btn--large">Get in Touch</a>
-</section>
-

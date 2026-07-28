@@ -1,20 +1,19 @@
 ---
 title: Contact
 permalink: /contact/
-description: "Contact Kiran Shahi about software engineering, applied AI, computer vision, or research collaboration."
+description: "Contact Kiran Shahi about software engineering, applied AI, visual computing, or research collaboration."
 ---
-# Contact
+# Let&rsquo;s work on something useful.
 
-I welcome conversations about software engineering, computer vision, applied AI, visual computing, open-source work, and research collaboration.
+I welcome conversations about specialist software, visual computing, applied AI, open-source projects, and research collaboration. If you have a concrete problem or opportunity, include a little context and I&rsquo;ll get back to you.
 
 ## Email
 
 [kiran.shahi@ieee.org](mailto:kiran.shahi@ieee.org)
 
-## Professional and academic profiles
+## Find me online
 
 - [GitHub]({{ site.social.github }})
 - [LinkedIn]({{ site.social.linkedin }})
 - [Google Scholar]({{ site.social.scholar }})
 - [ORCID]({{ site.social.orcid }})
-- [ResearchGate]({{ site.social.researchgate }})
