@@ -46,6 +46,8 @@ nav_items:
     url: /projects/
   - title: Labs
     url: /labs/
+  - title: Tools
+    url: /tools/
   - title: Notes
     url: /news/
   - title: Contact
