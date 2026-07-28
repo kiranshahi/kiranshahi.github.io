@@ -1,36 +1,29 @@
 ---
-title: News
+title: Notes
 permalink: /news/
+description: "Research notes, project updates, and technical writing by Kiran Shahi."
 ---
 
-# News & Updates
+# Notes
 
-This page shares research updates, project milestones, and academic progress.
+Research updates, project milestones, and practical observations from building software across visual computing and applied AI.
 
-## Recent Updates
+## Recent updates
 
-### New preprint on weakly supervised pneumonia localization
+### Weakly supervised pneumonia localisation
 
-I completed a research manuscript on weakly supervised pneumonia localization from chest X-rays using deep neural networks and Grad-CAM explanations.
+My latest research examines pneumonia localisation from chest X-rays using deep neural networks and Grad-CAM explanations. The work focuses on learning useful spatial evidence from coarse labels and evaluating whether model explanations support trustworthy interpretation.
 
-### Ongoing work on uncertainty-aware lung segmentation
+[Read the publication](https://arxiv.org/abs/2511.00456)
 
-I am currently developing an uncertainty-focused evaluation pipeline for lung segmentation using nnU-Net v2 ensemble models.
+### Building privacy-first browser tools
 
-### Expanding research into temporal vision
+CSV Viewer explores a simple product principle: local data should remain local. The tool provides search, sorting, pagination, and filtered export entirely in the browser.
 
-I am exploring future work in temporal video matting, with an emphasis on explainable confidence maps and robust edge-aware modeling.
+[Open CSV Viewer](https://kirans.me/csv-viewer/)
 
-### Academic profile development
+### Interactive visual computing
 
-I am actively growing my publication roadmap, open-source portfolio, and long-term research direction in applied AI.
+I am developing small browser labs to make technical ideas—such as point-cloud projection and solar geometry—easier to explore through direct manipulation.
 
-## Suggested Future Update Ideas
-
-- Paper submitted to journal/conference
-- Preprint released
-- New GitHub repository published
-- Conference attendance
-- Collaboration announcement
-- New dataset or experiment milestone
-- Blog article published
+[Explore the labs]({{ '/labs/' | relative_url }})

@@ -1,8 +1,9 @@
 ---
 title: About
 permalink: /about/
-description: "About Kiran Shahi, a London-based software developer, AI engineer, and computer vision researcher."
+description: Learn about Kiran Shahi, a London-based software developer, AI engineer, and computer vision researcher.
 ---
+
 # About
 
 I am a London-based software developer, AI engineer, and computer vision researcher. At MBS Survey Software Ltd, I contribute to specialist software that brings together engineering workflows, computer vision, 3D graphics, artificial intelligence, and visual analysis.
@@ -25,4 +26,4 @@ Before joining MBS Survey Software, I worked as a software engineer at Braindigi
 - Explainable AI
 - Research-to-product development
 
-For more detail, see my [professional profile]({{ '/cv/' | relative_url }}), [GitHub]({{ site.social.github }}), and [LinkedIn]({{ site.social.linkedin }}).
+For more detail, see my [professional profile]({{ '/contact/' | relative_url }}), [GitHub]({{ site.social.github }}), and [LinkedIn]({{ site.social.linkedin }}).

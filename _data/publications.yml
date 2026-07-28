@@ -2,23 +2,22 @@
   authors: "Kiran Shahi, Yongmin Li"
   venue: "International Journal of Network Dynamics and Intelligence"
   year: 2023
-  tags: [medical-imaging, xai, transformers]
+  tags: [computer-vision, video-matting, temporal-segmentation]
   links:
     pdf: "https://media.sciltp.com/articles/sciltp/257/pdf/6597b4c418b50.pdf"
-    arxiv: "#"
     doi: "https://doi.org/10.53941/ijndi.2023.100004"
     code: "https://github.com/kiranshahi/Real-time-Background-replacement-in-Video-Conferencing"
-  abstract: ""
+  abstract: "Real-time human segmentation and background replacement using convolutional and recurrent architectures, with attention to temporal consistency and local inference."
 
 - title: "Weakly Supervised Pneumonia Localization from Chest X-Rays Using Deep Neural Network and Grad-CAM Explanations"
   authors: "Kiran Shahi, Anup Bagale"
   venue: "Journal of Artificial Intelligence and Autonomous Intelligence"
   year: 2025
-  tags: [computer-vision, video-matting]
+  tags: [medical-imaging, explainable-ai, weakly-supervised-learning]
   links:
     pdf: "https://arxiv.org/pdf/2511.00456"
     arxiv: "https://arxiv.org/abs/2511.00456"
     doi: "https://doi.org/10.54364/JAIAI.2024.1126"
     code: "https://github.com/kiranshahi/pneumonia-analysis"
-  abstract: ""
+  abstract: "Weakly supervised pneumonia localisation from chest X-rays using deep neural networks and Grad-CAM explanations."
 
