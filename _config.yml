@@ -2,7 +2,7 @@ title: Kiran Shahi
 email: kiran.shahi@ieee.org
 url: "https://kirans.me"
 baseurl: ""
-description: "Kiran Shahi is a London-based software engineer building production-grade software for visual computing and applied AI."
+description: "Kiran Shahi is a London-based software engineer and AI researcher specialising in computer vision, visual computing, medical imaging, and real-time video."
 lang: en
 
 theme: null
@@ -42,6 +42,8 @@ nav_items:
     url: /projects/
   - title: Research
     url: /research/
+  - title: Publications
+    url: /publications/
   - title: Notes
     url: /news/
   - title: About
@@ -51,9 +53,9 @@ nav_items:
 
 author:
   name: Kiran Shahi
-  title: Software Engineer | Visual Computing & Applied AI
+  title: Software Engineer & AI Researcher
   affiliation: MBS Survey Software Ltd | London, United Kingdom
-  tagline: Building production-grade software for visual computing and applied AI.
+  tagline: Software engineer and AI researcher working across computer vision, visual computing, and applied AI.
   email: kiran.shahi@ieee.org
 
 social:
@@ -62,7 +64,6 @@ social:
   orcid: https://orcid.org/0000-0003-3739-5985
   linkedin: https://www.linkedin.com/in/kiranshahi
   researchgate: https://www.researchgate.net/profile/Kiran-Shahi
-
 
 exclude:
   - vendor

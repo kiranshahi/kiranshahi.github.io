@@ -1,10 +1,13 @@
 ---
 title: Publications
+title_suffix: Kiran Shahi
 permalink: /publications/
-description: "Peer-reviewed computer vision and applied AI publications by Kiran Shahi."
+description: "Peer-reviewed computer vision, medical imaging, and applied AI publications by Kiran Shahi, software engineer and AI researcher."
 ---
 
-# Publications
+# Publications by Kiran Shahi
+
+Research by **Kiran Shahi** in computer vision, medical imaging, explainable AI, real-time video, and visual computing. For the complete citation record, see my [Google Scholar]({{ site.social.scholar }}) and [ORCID]({{ site.social.orcid }}).
 
 ## Weakly Supervised Pneumonia Localization from Chest X-Rays
 
